@@ -1,5 +1,24 @@
 void main() {
 
+  
+  ItemCardapio item1 = new ItemCardapio();
+  item1.nome = "Refresco do Chaves";
+  item1.descricao = "Suco de limão que parece de tamarindo e tem gosto de groselha.";
+  item1.emPromocao = false;
+  item1.preco = 2.99;
+  item1.id = 1L;
+  item1.categoria = 4;
+
+  var item2 = new ItemCardapio();
+  item2.nome = "Sanduíche de Presunto do Chaves";
+  item2.descricao = "Sanduíche de presunto simples, mas feito com muito amor.";
+  item2.emPromocao = true;
+  item2.preco = 3.50;
+  item2.precoComDesconto = 2.99;
+  item2.id = 2L;
+  item2.categoria = 2;
+
+
   /*
   Tipos primitivos:
     - char
@@ -49,31 +68,23 @@ void main() {
   % (percentual)
   */
 
- var nomeItem1 = "Refresco do Chaves";
- var descricaoItem1 = "Suco de limão que parece de tamarindo e tem gosto de groselha.";
- var emPromocaoItem1 = false;
- var precoItem1 = 2.99;
- var idItem1 = 1L;
- var categoriaItem1 = 4;
+  IO.println("Nome: " + item2.nome);
 
-  IO.println("Nome: " + nomeItem1);
-
-  if (emPromocaoItem1) {
-    //var porcentagemDesconto = (preco - precoComDesconto) / preco;
-    //var valorDesconto = preco * porcentagemDesconto;
-    //IO.println("Porcentagem de desconto: " + porcentagemDesconto);
-    //IO.println("Preço: de " + preco + " por " + precoComDesconto);
+  if (item2.emPromocao) {
+    var porcentagemDesconto = (item2.preco - item2.precoComDesconto) / item2.preco;
+    IO.println("Porcentagem de desconto: " + porcentagemDesconto);
+    IO.println("Preço: de " + item2.preco + " por " + item2.precoComDesconto);
   } else {
-    IO.println("Preço: " + precoItem1);
+    IO.println("Preço: " + item2.preco);
   }
 
-  if (categoriaItem1 == 1) {
+  if (item2.categoria == 1) {
     IO.println("Categoria: Entradas");
-  } else if (categoriaItem1 == 2) {
+  } else if (item2.categoria == 2) {
     IO.println("Categoria: Pratos Principais");
-  } else if (categoriaItem1 == 3) {
+  } else if (item2.categoria == 3) {
     IO.println("Categoria: Sobremesas");
-  } else if (categoriaItem1 == 4) {
+  } else if (item2.categoria == 4) {
     IO.println("Categoria: Bebidas");
   } else {
     IO.println("Categoria não encontrada...");
@@ -81,7 +92,7 @@ void main() {
 
   IO.println("---------------------------------------------");
 
-  switch (categoriaItem1) { 
+  switch (item2.categoria) { 
     case 1:
       IO.println("Categoria: Entradas");
       break;
@@ -178,7 +189,7 @@ void main() {
 
   IO.println("O primeiro preço que é maior que " + precoLimite + ": " + precoMaiorQueLimite);
   IO.println("---------------------------------------------");
-  
+
   // Imprimir todos os precos menores ou iguais ao limite
   for (double preco : precos) {
 
@@ -194,4 +205,16 @@ void main() {
   IO.println("---------------------------------------------");
 
 }
-        
+
+class ItemCardapio {
+
+  // atributos
+  String nome;
+  String descricao;
+  boolean emPromocao;
+  double preco;
+  double precoComDesconto;
+  long id;
+  int categoria;
+
+}
