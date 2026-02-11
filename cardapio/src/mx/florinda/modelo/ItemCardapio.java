@@ -3,13 +3,13 @@ package mx.florinda.modelo;
 public class ItemCardapio {
 
     // atributos
-    private long id;
-    private String nome;
-    private String descricao;
+    private final long id;
+    private final String nome;
+    private final String descricao;
     private boolean emPromocao;
-    private double preco;
+    private final double preco;
     private double precoComDesconto;
-    private CategoriaCardapio categoria;
+    private final CategoriaCardapio categoria;
 
     // construtor
     protected ItemCardapio(long id, String nome, String descricao, double preco, CategoriaCardapio categoria) {
