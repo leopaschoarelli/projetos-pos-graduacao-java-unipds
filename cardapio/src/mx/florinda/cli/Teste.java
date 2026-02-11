@@ -3,6 +3,13 @@ import mx.florinda.modelo.ItemCardapio;
 
 void main() {
 
+    /*
+    private - só na mesma classe => Manutenabilidade (encapsulamento)
+    padrão (sem nada) - só no mesmo pacote
+    protected - nomesmo pacote ou em classes filhas mesmo se tiverem em outro pacote
+    public - qualquer classe de qualquer pacote
+     */
+
     Cardapio cardapio = new Cardapio();
 
     String linha = IO.readln("Digite um ID de um item de cardápio: ");

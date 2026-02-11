@@ -1,5 +1,7 @@
 package mx.florinda.modelo;
 
+import mx.florinda.modelo.isento.ItemCardapioIsento;
+
 public class Cardapio {
 
     private ItemCardapio[] itens;
