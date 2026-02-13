@@ -4,6 +4,9 @@
 Neste repositório estarão os projetos desenvolvidos durante o curso de Pós Graduação, plataforma UNIPDS em parceria com a faculdade Anhanguera de São Paulo.
 
 ## Ambientação:
+
+Início da disciplina em: 05/02/2026  ✅
+
 ### Introdução ao Java
 - Videoaula 01: O que é Java? ✅
 - Videoaula 02: JVM, JSR e JEP ✅
@@ -35,6 +38,9 @@ Neste repositório estarão os projetos desenvolvidos durante o curso de Pós Gr
 - Refatoração
 
 ## Fundamentos do Java
+
+Início da disciplina em: 06/02/2026  ✅
+
 ### Módulo 1:
 - Videoaula 01: Por que Java?
 - Videoaula 02: Princípios de Orientação a Objetos
@@ -64,3 +70,35 @@ Neste repositório estarão os projetos desenvolvidos durante o curso de Pós Gr
 - Videoaula 16: Serialização
 ### Videocast:
 - Videoaula 01:  Inteligência Artificial (IA)
+
+## Desenvolvimento de Aplicações Back-End com Spring Boot e Quarkus
+
+Contéudo bloqueado. Início da disciplina em: 04/03/2026 🚫
+
+## Fundamentos de Front-End com React
+
+Contéudo bloqueado. Início da disciplina em: 30/03/2026 🚫
+
+## Arquitetura de Sistemas
+
+Contéudo bloqueado. Início da disciplina em: 25/04/2026 🚫
+
+## Software Design e System Design
+
+Contéudo bloqueado. Início da disciplina em: 21/05/2026 🚫
+
+## Concorrência e Multithreading em Java
+
+Contéudo bloqueado. Início da disciplina em: 16/06/2026 🚫
+
+## Infraestrutura e Cloud Computing com Docker, Kubernets e AWS
+
+Contéudo bloqueado. Início da disciplina em: 12/07/2026 🚫
+
+## Banco de Dados Relacionais e NoSQL
+
+Contéudo bloqueado. Início da disciplina em: 07/08/2026 🚫
+
+## Testes Automatizados e Qualidade de Código
+
+Contéudo bloqueado. Início da disciplina em: 02/09/2026 🚫
