@@ -1,3 +1,4 @@
+
 # Pós Graduação Lato Sensu EAD - Engenharia de Software Java + I.A
 
 Neste repositório estarão os projetos desenvolvidos durante o curso de Pós Graduação, plataforma UNIPDS em parceria com a faculdade Anhanguera de São Paulo.
@@ -35,3 +36,69 @@ Início da disciplina em: 05/02/2026  ✅
 - Java 24 sem enrolação
 - JPA na prática
 - Refatoração
+
+## Fundamentos do Java
+
+Início da disciplina em: 06/02/2026  ✅
+
+### Módulo 1:
+- Videoaula 01: Por que Java?
+- Videoaula 02: Princípios de Orientação a Objetos
+- Videoaula 03: Estruturas de Dados
+- Videoaula 04: APIs essenciais do Java
+- Videoaula 05: Manipulação de Arquivos e Entrada/Saída (I/O)
+- Videoaula 06: Tratamento de Erros e Exceções 
+- Videoaula 07: Streams
+- Videoaula 08: Configuração do ambiente de desenvolvimento no IntelliJ IDEA e Eclipse
+- Videoaula 09: Maven para gestão de dependências
+### Módulo 2:
+- Videoaula 01: Introdução ao Gradle
+- Videoaula 02: Aprofundando em coleções
+- Videoaula 03: Aprofundando em coleções
+- Videoaula 04: Aprofundando em coleções
+- Videoaula 05: Networking
+- Videoaula 06: Networking
+- Videoaula 07: Networking
+- Videoaula 08: Networking
+- Videoaula 09: Concurrency
+- Videoaula 10: Concurrency
+- Videoaula 11: Concurrency
+- Videoaula 12: JDBC
+- Videoaula 13: JDBC
+- Videoaula 14: Logging
+- Videoaula 15: Internacionalização (i18n)
+- Videoaula 16: Serialização
+### Videocast:
+- Videoaula 01:  Inteligência Artificial (IA)
+
+## Desenvolvimento de Aplicações Back-End com Spring Boot e Quarkus
+
+Contéudo bloqueado. Início da disciplina em: 04/03/2026 🚫
+
+## Fundamentos de Front-End com React
+
+Contéudo bloqueado. Início da disciplina em: 30/03/2026 🚫
+
+## Arquitetura de Sistemas
+
+Contéudo bloqueado. Início da disciplina em: 25/04/2026 🚫
+
+## Software Design e System Design
+
+Contéudo bloqueado. Início da disciplina em: 21/05/2026 🚫
+
+## Concorrência e Multithreading em Java
+
+Contéudo bloqueado. Início da disciplina em: 16/06/2026 🚫
+
+## Infraestrutura e Cloud Computing com Docker, Kubernets e AWS
+
+Contéudo bloqueado. Início da disciplina em: 12/07/2026 🚫
+
+## Banco de Dados Relacionais e NoSQL
+
+Contéudo bloqueado. Início da disciplina em: 07/08/2026 🚫
+
+## Testes Automatizados e Qualidade de Código
+
+Contéudo bloqueado. Início da disciplina em: 02/09/2026 🚫
