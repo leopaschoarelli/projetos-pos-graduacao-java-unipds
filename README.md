@@ -1,9 +1,11 @@
-
 # Pós Graduação Lato Sensu EAD - Engenharia de Software Java + I.A
 
 Neste repositório estarão os projetos desenvolvidos durante o curso de Pós Graduação, plataforma UNIPDS em parceria com a faculdade Anhanguera de São Paulo.
 
 ## Ambientação:
+
+Início da disciplina em: 05/02/2026  ✅
+
 ### Introdução ao Java
 - Videoaula 01: O que é Java? ✅
 - Videoaula 02: JVM, JSR e JEP ✅
