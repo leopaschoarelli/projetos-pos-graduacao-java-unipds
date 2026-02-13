@@ -41,32 +41,25 @@ void main() {
   */
  int categoriaItem2 = 2;
 
-  // var = inferencia de tipos
-  var nomeItem2 = "Sanduíche de Presunto do Chaves";
-  var descricaoItem2 = "Sanduíche de presunto simples, mas feito com muito amor.";
-  var emPromocaoItem2 = true;
+  String linha = IO.readln("Digite um ID de um item de cardápio: ");
+  long idSelecionado = Long.parseLong(linha);
 
-  //float preco = 3.50f; // float tem 32 bits de armazenamento e double tem 64 bits de armazenamento
-  var precoItem2 = 3.50;
-  var precoComDescontoItem2 = 2.99; 
+  ItemCardapio itemSelecionado = cardapio.itens[( (int) idSelecionado) - 1];
 
   /*
-  byte..:  8 bits = -2^7 (-2 elevado a 7) até 2^7-1 (2 elevado a 7 menos 1) = -128 até 127
-  short.: 16 bits = -32768 até 32767
-  int...: 32 bits = -2.147.483.648 até 2.147.483.647
-  long..: 64 bits = -9.223.372.036.854.775.808 até 9.223.372.036.854.775.807
-  long valor = 9_223_372_036_854_775_807L; underscore ( _ ) para representar o separador de milhares.
+  for (ItemCardapio item : cardapio) {
+    if (item.id == idSelecionado) {
+      itemSelecionado = item;
+      break;
+    }
+  }
   */
-  var idItem2 = 2;
 
-  /*
-  Operadores aritmeticos:
-  + (soma)
-  - (subtração)
-  / (divisão)
-  * (multiplicação)
-  % (percentual)
-  */
+  IO.println("--------------------------------------------------------------------------------------------");
+  IO.println("== Item Cardápio ==");
+  IO.println("ID: " + itemSelecionado.id);
+  IO.println("Nome: " + itemSelecionado.nome);
+  IO.println("Descrição: " + itemSelecionado.descricao);
 
   IO.println("Nome: " + item2.nome);
 
@@ -90,7 +83,12 @@ void main() {
     IO.println("Categoria não encontrada...");
   }
 
-  IO.println("---------------------------------------------");
+  IO.println("Categoria: " + itemSelecionado.obtemNomeCategoria());
+  IO.println("--------------------------------------------------------------------------------------------");
+  IO.println("Soma dos preços: " + cardapio.obtemSomaDosPrecos());
+  IO.println("Total de itens em promoção: " + cardapio.obtemTotalDeItensEmPromoca());
+  double precoLimite = 10.0;
+  IO.println("O primeiro preço que é maior que " + precoLimite + ": " + cardapio.obtemPrimeiroPrecoMaiorQueLimite(precoLimite));
 
   switch (item2.categoria) { 
     case 1:
@@ -109,7 +107,9 @@ void main() {
       IO.println("Categoria não encontrada...");
   }
 
-  IO.println("---------------------------------------------");
+  IO.println("--------------------------------------------------------------------------------------------");
+
+  /*
   IO.println("Arrays");
 
   double[] precos = new double[7];
@@ -203,6 +203,115 @@ void main() {
   }
 
   IO.println("---------------------------------------------");
+  */
+
+}
+
+class ItemCardapio {
+
+  // atributos
+  long id;
+  String nome;
+  String descricao;
+  boolean emPromocao;
+  double preco;
+  double precoComDesconto;
+  CategoriaCardapio categoria;
+
+  // construtor
+  ItemCardapio(long id, String nome, String descricao, double preco, CategoriaCardapio categoria) {
+    this.id = id;
+    this.nome = nome;
+    this.descricao = descricao;
+    this.preco = preco;
+    this.categoria = categoria;
+  }
+
+  // metodos
+  double calculaPorcentagemDesconto() {
+    return (preco - precoComDesconto) / preco * 100;
+  }
+
+  CategoriaCardapio obtemNomeCategoria() {
+    return categoria;
+  }
+
+  void definePromocao(double precoComDesconto) {
+    emPromocao = true;
+    this.precoComDesconto = precoComDesconto;
+  }
+
+}
+
+class Cardapio {
+
+  ItemCardapio[] itens;
+
+  Cardapio() {
+
+    var item1 = new ItemCardapio(1L, "Refresco do Chaves", "Suco de limão que parece de tamarindo e tem gosto de groselha.", 2.99, CategoriaCardapio.BEBIDAS);
+
+    var item2 = new ItemCardapio(2L, "Sanduíche de Presunto do Chaves", "Sanduíche de presunto simples, mas feito com muito amor.", 3.50, CategoriaCardapio.PRATOS_PRINCIPAIS);
+    item2.definePromocao(2.99);
+
+    var item3 = new ItemCardapio(3L, "Torta de Frango da Dona Florinda", "Torta de frango com recheio cremoso e massa crocante.", 12.99, CategoriaCardapio.PRATOS_PRINCIPAIS);
+    item3.definePromocao(10.99);
+    
+    var item4 = new ItemCardapio(4L, "Pipoca do Quico", "Balde de pipoca preparado com carinho pelo Quico.", 4.99, CategoriaCardapio.PRATOS_PRINCIPAIS);
+    item4.definePromocao(3.99);
+
+    var item5 = new ItemCardapio(5L, "Água de Jamaica", "Água aromatizada com hibisco e toque de açúcar.", 2.50, CategoriaCardapio. BEBIDAS);
+    item5.definePromocao(2.0);
+
+    var item6 = new ItemCardapio(6L, "Churros do Chaves", "Churros recheados com doce de leite, clássicos e irresistíveis.", 4.99, CategoriaCardapio.SOBREMESAS);
+    item6.definePromocao(3.99);
+
+    var item7 = new ItemCardapio(7L, "Tacos de Carnitas", "Tacos recheados com carne tenra.", 25.90, CategoriaCardapio.PRATOS_PRINCIPAIS);
+
+    itens = new ItemCardapio[7];
+
+    itens[0] = item1;
+    itens[1] = item2;
+    itens[2] = item3;
+    itens[3] = item4;
+    itens[4] = item5;
+    itens[5] = item6;
+    itens[6] = item7;
+
+  }
+
+  double obtemSomaDosPrecos() {
+    double totalDePrecos = 0.0;
+    for (ItemCardapio item : itens) {
+      totalDePrecos += item.preco;
+    }
+    return totalDePrecos;
+  }
+
+  int obtemTotalDeItensEmPromoca() {
+    int totalItensEmPromocao = 0;
+
+    for (ItemCardapio item : itens) {
+      if (item.emPromocao) {
+        totalItensEmPromocao++;
+      }
+    }
+
+    return totalItensEmPromocao;
+  }
+
+  double obtemPrimeiroPrecoMaiorQueLimite(double precoLimite) {
+    double precoMaiorQueLimite = -1.0;
+    for (ItemCardapio item : itens) {
+
+      if (item.preco > precoLimite) {
+        precoMaiorQueLimite = item.preco;
+        break;
+      }
+
+    }
+    return precoMaiorQueLimite;
+  }
 
 }
 
