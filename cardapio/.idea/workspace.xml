@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1ac7714-dc6f-40e3-a423-f3ec08273078" name="Changes" comment="" />
+    <list default="true" id="a1ac7714-dc6f-40e3-a423-f3ec08273078" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.ai/mcp/mcp.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/Teste.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/cli/TesteObjetos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/cli/TesteString.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/leitor/LeitorItensCardapio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/leitor/LeitorItensCardapioBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/leitor/LeitorItensCardapioCSV.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/leitor/LeitorItensCardapioGSON.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/modelo/Cardapio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/modelo/CategoriaCardapio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/modelo/FlorindaException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/modelo/ItemCardapio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/cardapio/mx/florinda/modelo/isento/ItemCardapioIsento.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mx/florinda/modelo/ItemCardapioIsento.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "modulo__0/ambientacao/introducao__ao__java/video__aula__19",
+    "git-widget-placeholder": "Merging modulo__0/ambientacao/introducao__ao__java/video__aula__11",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/leona/Documents/PósGraduação-EngenhariaSoftwareJavaIA/projetos-pos-graduacao-java-unipds/cardapio/src",
     "node.js.detected.package.eslint": "true",

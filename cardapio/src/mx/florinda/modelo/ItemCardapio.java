@@ -12,7 +12,7 @@ public class ItemCardapio {
     private CategoriaCardapio categoria;
 
     // construtor
-    ItemCardapio(long id, String nome, String descricao, double preco, CategoriaCardapio categoria) {
+    protected ItemCardapio(long id, String nome, String descricao, double preco, CategoriaCardapio categoria) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
