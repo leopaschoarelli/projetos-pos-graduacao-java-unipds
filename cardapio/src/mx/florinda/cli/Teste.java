@@ -1,7 +1,7 @@
 import mx.florinda.modelo.Cardapio;
 import mx.florinda.modelo.ItemCardapio;
 
-void main() throws IOException {
+void main() {
 
     /*
     private - só na mesma classe => Manutenabilidade (encapsulamento)

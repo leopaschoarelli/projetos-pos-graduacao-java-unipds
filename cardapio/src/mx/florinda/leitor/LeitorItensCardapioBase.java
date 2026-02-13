@@ -1,5 +1,6 @@
 package mx.florinda.leitor;
 
+import mx.florinda.modelo.FlorindaException;
 import mx.florinda.modelo.ItemCardapio;
 
 import java.io.IOException;
@@ -15,24 +16,32 @@ public abstract class LeitorItensCardapioBase implements LeitorItensCardapio {
     }
 
     @Override
-    public ItemCardapio[] processaArquivo() throws IOException {
-        Path arquivo = Path.of(nomeArquivo);
-        String conteudoArquivo = Files.readString(arquivo);
-        String[] linhasArquivo = conteudoArquivo.split("\n");
+    public ItemCardapio[] processaArquivo() {
 
-        ItemCardapio[] itens = new ItemCardapio[linhasArquivo.length];
+        try {
+            Path arquivo = Path.of(nomeArquivo);
+            String conteudoArquivo = Files.readString(arquivo);
 
-        for (int i = 0; i < linhasArquivo.length; i++) {
-            String linha = linhasArquivo[i];
+            String[] linhasArquivo = conteudoArquivo.split(";");
 
-            ItemCardapio item = processaLinha(linha);
+            ItemCardapio[] itens = new ItemCardapio[linhasArquivo.length-1];
 
-            itens[i] = item;
+            for (int i = 1; i < linhasArquivo.length; i++) {
+                String linha = linhasArquivo[i];
+
+                ItemCardapio item = processaLinha(linha);
+
+                itens[i-1] = item;
+            }
+
+            return itens;
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
         }
 
-        return itens;
+
     }
 
-    protected abstract ItemCardapio processaLinha(String linha);
+    protected abstract ItemCardapio processaLinha(String linha) throws FlorindaException;
 
 }

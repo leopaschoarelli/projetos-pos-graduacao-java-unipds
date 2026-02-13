@@ -8,16 +8,10 @@ public class Cardapio {
 
     private final ItemCardapio[] itens;
 
-    public Cardapio(String nomeArquivo) throws IOException {
+    public Cardapio(String nomeArquivo) {
 
         LeitorItensCardapio leitor = LeitorItensCardapio.criaLeitor(nomeArquivo);
-        if (leitor != null) {
-            itens = leitor.processaArquivo();
-        } else {
-            IO.println("A extensão do arquivo é inválido: " + nomeArquivo);
-            itens = new ItemCardapio[0];
-        }
-
+        itens = leitor.processaArquivo();
     }
 
     public double getSomaDosPrecos() {
