@@ -62,6 +62,10 @@ public class TesteString {
         // "final" para atributos indica que vai ser definido no construtor e não será mais alterado.
         // "final" para variaveis indica que a variável não pode ser modificada depois de ser definida.
 
+        String nomeItemDigitado = IO.readln("Digite: ");
+        IO.println(nomeItem1 == nomeItemDigitado); // == para classes (ItemCardapio, String, etc), compara se é o mesmo objeto e se a String é hard-coded no código sempre vai ser o mesmo objeto.
+        IO.println(nomeItem1.equals(nomeItemDigitado)); // case-sensitive
+        IO.println(nomeItem1.equalsIgnoreCase(nomeItemDigitado)); // case-insensitive
     }
 
 }
