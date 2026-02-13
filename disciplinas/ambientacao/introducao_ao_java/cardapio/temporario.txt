@@ -1,0 +1,22 @@
+Digite um nome de arquivo de itens de cardápio: itens-cardapio.csv
+Nome do arquivo: itens-cardapio.csv
+Digite um ID de um item de cardápio: 1
+--------------------------------------------------------------------------------------------
+== Item Cardápio ==
+ID: 1
+Nome: Refresco do Chaves
+Descrição: Suco de limão que parece de tamarindo e tem gosto de groselha.
+Preço: 2.99
+Item não está em promoção
+Categoria: BEBIDAS
+Imposto: 0.29900000000000004
+--------------------------------------------------------------------------------------------
+Soma dos preços: 57.86
+Total de itens em promoção: 5
+O primeiro preço que é maior que 10.0: 12.99
+Preço menor que 10.0: 2.99
+Preço menor que 10.0: 3.5
+Preço menor que 10.0: 4.99
+Preço menor que 10.0: 2.5
+Preço menor que 10.0: 4.99
+--------------------------------------------------------------------------------------------
