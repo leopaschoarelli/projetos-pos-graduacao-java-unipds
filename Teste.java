@@ -1,6 +1,45 @@
 void main() {
 
-  Cardapio cardapio = new Cardapio();
+  
+  ItemCardapio item1 = new ItemCardapio();
+  item1.nome = "Refresco do Chaves";
+  item1.descricao = "Suco de limão que parece de tamarindo e tem gosto de groselha.";
+  item1.emPromocao = false;
+  item1.preco = 2.99;
+  item1.id = 1L;
+  item1.categoria = 4;
+
+  var item2 = new ItemCardapio();
+  item2.nome = "Sanduíche de Presunto do Chaves";
+  item2.descricao = "Sanduíche de presunto simples, mas feito com muito amor.";
+  item2.emPromocao = true;
+  item2.preco = 3.50;
+  item2.precoComDesconto = 2.99;
+  item2.id = 2L;
+  item2.categoria = 2;
+
+
+  /*
+  Tipos primitivos:
+    - char
+    - byte
+    - short
+    - int
+    - long
+    - float
+    - double
+    - boolean
+  https://dev.java/learn/language-basics/primitive-types/
+  */
+
+  /*
+  categorias:
+    1 - Entradas
+    2 - Pratos Principais
+    3 - Sobremesas
+    4 - Bebidas
+  */
+ int categoriaItem2 = 2;
 
   String linha = IO.readln("Digite um ID de um item de cardápio: ");
   long idSelecionado = Long.parseLong(linha);
@@ -22,18 +61,26 @@ void main() {
   IO.println("Nome: " + itemSelecionado.nome);
   IO.println("Descrição: " + itemSelecionado.descricao);
 
-  if (itemSelecionado.emPromocao) {
+  IO.println("Nome: " + item2.nome);
 
-    var porcentagemDesconto = itemSelecionado.calculaPorcentagemDesconto();
-    IO.println("Item Em Promoção!");
-    IO.println("Preço: de " + itemSelecionado.preco + " por " + itemSelecionado.precoComDesconto);
+  if (item2.emPromocao) {
+    var porcentagemDesconto = (item2.preco - item2.precoComDesconto) / item2.preco;
     IO.println("Porcentagem de desconto: " + porcentagemDesconto);
-
+    IO.println("Preço: de " + item2.preco + " por " + item2.precoComDesconto);
   } else {
+    IO.println("Preço: " + item2.preco);
+  }
 
-    IO.println("Preço: " + itemSelecionado.preco);
-    IO.println("Item não está em promoção");
-
+  if (item2.categoria == 1) {
+    IO.println("Categoria: Entradas");
+  } else if (item2.categoria == 2) {
+    IO.println("Categoria: Pratos Principais");
+  } else if (item2.categoria == 3) {
+    IO.println("Categoria: Sobremesas");
+  } else if (item2.categoria == 4) {
+    IO.println("Categoria: Bebidas");
+  } else {
+    IO.println("Categoria não encontrada...");
   }
 
   IO.println("Categoria: " + itemSelecionado.obtemNomeCategoria());
@@ -43,11 +90,21 @@ void main() {
   double precoLimite = 10.0;
   IO.println("O primeiro preço que é maior que " + precoLimite + ": " + cardapio.obtemPrimeiroPrecoMaiorQueLimite(precoLimite));
 
-  for (ItemCardapio item : cardapio.itens) {
-    if (item.preco <= precoLimite) {
-      IO.println("Preço menor que " + precoLimite + ": " + item.preco);
-      continue;
-    }
+  switch (item2.categoria) { 
+    case 1:
+      IO.println("Categoria: Entradas");
+      break;
+    case 2:
+      IO.println("Categoria: Pratos Principais");
+      break;
+    case 3:
+      IO.println("Categoria: Sobremesas");
+      break;
+    case 4:
+      IO.println("Categoria: Bebidas");
+      break;
+    default:
+      IO.println("Categoria não encontrada...");
   }
 
   IO.println("--------------------------------------------------------------------------------------------");
@@ -258,8 +315,15 @@ class Cardapio {
 
 }
 
-enum CategoriaCardapio {
+class ItemCardapio {
 
-  ENTRADA, PRATOS_PRINCIPAIS, SOBREMESAS, BEBIDAS;
+  // atributos
+  String nome;
+  String descricao;
+  boolean emPromocao;
+  double preco;
+  double precoComDesconto;
+  long id;
+  int categoria;
 
 }
