@@ -49,7 +49,7 @@ Início da disciplina em: 06/02/2026  ✅
 - Videoaula 05: Manipulação de Arquivos e Entrada/Saída (I/O) ✅
 - Videoaula 06: Tratamento de Erros e Exceções ✅
 - Videoaula 07: Streams ✅
-- Videoaula 08: Configuração do ambiente de desenvolvimento no IntelliJ IDEA e Eclipse
+- Videoaula 08: Configuração do ambiente de desenvolvimento no IntelliJ IDEA e Eclipse ✅
 - Videoaula 09: Maven para gestão de dependências
 ### Módulo 2:
 - Videoaula 01: Introdução ao Gradle
