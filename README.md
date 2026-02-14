@@ -44,8 +44,8 @@ Início da disciplina em: 06/02/2026  ✅
 ### Módulo 1:
 - Videoaula 01: Por que Java? ✅
 - Videoaula 02: Princípios de Orientação a Objetos ✅
-- Videoaula 03: Estruturas de Dados
-- Videoaula 04: APIs essenciais do Java
+- Videoaula 03: Estruturas de Dados ✅
+- Videoaula 04: APIs essenciais do Java ✅
 - Videoaula 05: Manipulação de Arquivos e Entrada/Saída (I/O)
 - Videoaula 06: Tratamento de Erros e Exceções 
 - Videoaula 07: Streams
