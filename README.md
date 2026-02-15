@@ -52,8 +52,8 @@ Início da disciplina em: 06/02/2026  ✅
 - Videoaula 08: Configuração do ambiente de desenvolvimento no IntelliJ IDEA e Eclipse ✅
 - Videoaula 09: Maven para gestão de dependências ✅
 ### Módulo 2:
-- Videoaula 01: Introdução ao Gradle
-- Videoaula 02: Aprofundando em coleções
+- Videoaula 01: Introdução ao Gradle ✅
+- Videoaula 02: Aprofundando em coleções ✅
 - Videoaula 03: Aprofundando em coleções
 - Videoaula 04: Aprofundando em coleções
 - Videoaula 05: Networking
