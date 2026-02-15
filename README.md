@@ -42,15 +42,15 @@ Início da disciplina em: 05/02/2026  ✅
 Início da disciplina em: 06/02/2026  ✅
 
 ### Módulo 1:
-- Videoaula 01: Por que Java?
-- Videoaula 02: Princípios de Orientação a Objetos
-- Videoaula 03: Estruturas de Dados
-- Videoaula 04: APIs essenciais do Java
-- Videoaula 05: Manipulação de Arquivos e Entrada/Saída (I/O)
-- Videoaula 06: Tratamento de Erros e Exceções 
-- Videoaula 07: Streams
-- Videoaula 08: Configuração do ambiente de desenvolvimento no IntelliJ IDEA e Eclipse
-- Videoaula 09: Maven para gestão de dependências
+- Videoaula 01: Por que Java? ✅
+- Videoaula 02: Princípios de Orientação a Objetos ✅
+- Videoaula 03: Estruturas de Dados ✅
+- Videoaula 04: APIs essenciais do Java ✅
+- Videoaula 05: Manipulação de Arquivos e Entrada/Saída (I/O) ✅
+- Videoaula 06: Tratamento de Erros e Exceções ✅
+- Videoaula 07: Streams ✅
+- Videoaula 08: Configuração do ambiente de desenvolvimento no IntelliJ IDEA e Eclipse ✅
+- Videoaula 09: Maven para gestão de dependências ✅
 ### Módulo 2:
 - Videoaula 01: Introdução ao Gradle
 - Videoaula 02: Aprofundando em coleções
