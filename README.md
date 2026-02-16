@@ -56,7 +56,7 @@ Início da disciplina em: 06/02/2026  ✅
 - Videoaula 02: Aprofundando em coleções ✅
 - Videoaula 03: Aprofundando em coleções ✅
 - Videoaula 04: Aprofundando em coleções ✅
-- Videoaula 05: Networking
+- Videoaula 05: Networking ✅
 - Videoaula 06: Networking
 - Videoaula 07: Networking
 - Videoaula 08: Networking
