@@ -10,10 +10,19 @@ Inicial sem controle de Threads:
   - 1 min 21 segundos
 
 Com Threads:
-  - 21791
+  - 21791 requests
   - 253 ms média
   - 251 ms min
   - 259 ms max
   - 00.00% erro
   - 361/sec vazão
   - 1 min
+
+ Com Thread Pool:
+   - 11511 requests
+   - 480 ms média
+   - 251 ms min
+   - 638 max min
+   - 00.00% erro
+   - 190/sec vazão
+   - 1 min
