@@ -11,7 +11,9 @@ public class ClienteViaCEP {
 
     public static void main(String[] args) throws Exception {
 
-        URI uri = URI.create("https://viacep.com.br/ws/01001000/json/"); // Java 1.4
+        //URI uri = URI.create("https://viacep.com.br/ws/01001000/json/"); // Java 1.4
+
+        URI uri = URI.create("http://localhost:8000/itensCardapio.json");
 
         try (HttpClient httpClient = HttpClient.newHttpClient()) { // HttpClient - Java 11
 
