@@ -2,16 +2,21 @@ package mx.florinda.cardapio;
 
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentSkipListMap;
 
 import static mx.florinda.cardapio.ItemCardapio.CategoriaCardapio.*;
 
 public class Database {
 
-    private final Map<Long, ItemCardapio> itensPorId = new HashMap<>();
+    // private final Map<Long, ItemCardapio> itensPorId = new HashMap<>(); // Não Thread-Safe
+    //private final Map<Long, ItemCardapio> itensPorId = new ConcurrentHashMap<>(); // Thread-Safe e eficiente
+    private final Map<Long, ItemCardapio> itensPorId = new ConcurrentSkipListMap<>(); // Thread-Safe e eficiente e mantém os itens ordenados
     //private final Map<ItemCardapio, BigDecimal> auditoriaPrecos = new HashMap<>();
     private final Map<ItemCardapio, BigDecimal> auditoriaPrecos = new IdentityHashMap<>();
 
     public Database() {
+        /*
         var refrescoDoChaves = new ItemCardapio(1L, "Refresco do Chaves",
                 "Suco de limão que parece de tamarindo e tem gosto de groselha.",
                 BEBIDAS, new BigDecimal("2.99"), null);
@@ -56,6 +61,7 @@ public class Database {
                 "Bolo de chocolate com cobertura de brigadeiro.",
                 SOBREMESA, new BigDecimal("5.99"), new BigDecimal("4.99"));
         itensPorId.put(11L, boloDaDonaClotilde);
+         */
     }
 
     public List<ItemCardapio> listaDeItensCardapio() {
