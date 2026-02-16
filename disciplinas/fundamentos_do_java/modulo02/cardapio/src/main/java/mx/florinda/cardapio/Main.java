@@ -1,15 +1,76 @@
 package mx.florinda.cardapio;
 
 import java.util.*;
-import java.util.stream.Collectors;
+
+import static mx.florinda.cardapio.ItemCardapio.CategoriaCardapio.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
         Database database = new Database();
+
+        // PRECISO DE UM HISTORICO DE VISUALIZAÇÃO DO CARDAPIO
+        HistoricoVisualizacao historico = new HistoricoVisualizacao(database);
+        historico.registrarVisualizacao(1L);
+        historico.registrarVisualizacao(2L);
+        historico.registrarVisualizacao(4L);
+        historico.registrarVisualizacao(6L);
+
+        System.out.println("-------------------------------------------");
+
+        historico.mostrarTotalItensVisualizados();
+        historico.listarVisualizacoes();
+
+    }
+
+    private void codigosExemplosTeste() {
+        Database database = new Database();
         List<ItemCardapio> itens = database.listaDeItensCardapio();
 
+        itens.forEach(System.out::println);
+
+        System.out.println("----------------------------------------------------");
+
+        Optional<ItemCardapio> optionalItem = database.itemCardapioPorId(1L);
+        String mensagem = optionalItem.map(ItemCardapio::toString).orElse("Não encontrado");
+        System.out.println(mensagem);
+
+        System.out.println("----------------------------------------------------");
+
+        // PRECISA MANTER AS CATEGORIAS QUE ESTÃO EM PROMOÇÃO
+        Set<ItemCardapio.CategoriaCardapio> categoriasEmPromocao = new TreeSet<>(); // ORDENADO
+        categoriasEmPromocao.add(SOBREMESA);
+        categoriasEmPromocao.add(ENTRADAS);
+        categoriasEmPromocao.forEach(System.out::println);
+        System.out.println("----------------------------------------------------");
+
+        Set<ItemCardapio.CategoriaCardapio> categoriaCardapios2 = Set.of(SOBREMESA, ENTRADAS);
+        categoriaCardapios2.forEach(System.out::println);
+        //categoriaCardapios2.add(PRATOS_PRINCIPAIS); // Não permite incluir
+        System.out.println("----------------------------------------------------");
+
+        Set<ItemCardapio.CategoriaCardapio> categoriaCardapios3 = EnumSet.of(SOBREMESA, ENTRADAS);
+        categoriaCardapios3.add(PRATOS_PRINCIPAIS);
+        categoriaCardapios3.forEach(System.out::println);
+        System.out.println("----------------------------------------------------");
+
+        // PRECISO DAS DESCRIÇÕES ASSOCIADAS AS CATEGORIAS EM PROMOÇÃO
+        Map<ItemCardapio.CategoriaCardapio, String> promocoes = new EnumMap<>(ItemCardapio.CategoriaCardapio.class);
+        promocoes.put(SOBREMESA, "O doce perfeito para você!");
+        promocoes.put(ENTRADAS, "Começe sua refeição com um toque de sabor!");
+        System.out.println(promocoes);
+
+        /*
+        if (optionalItem.isPresent()) {
+            ItemCardapio item = optionalItem.get();
+            System.out.println(item);
+        } else {
+            System.out.println("Não encontrado");
+        }
+         */
+
+        /*
         // saber quantos itens de cada categoria realmente tem no cardapio
         // Categoria => Quantidade
         //Map<ItemCardapio.CategoriaCardapio, Integer> itensPorCategoria = new HashMap<>();
@@ -38,6 +99,7 @@ public class Main {
         System.out.println("------------------------------");
         var itemBuscaPorId = database.buscaPorId(10L);
         System.out.println("Buscando produto por ID: " + itemBuscaPorId);
+         */
 
         /*
         // saber quais as categorias realmente tenho no cardapio
@@ -81,4 +143,5 @@ public class Main {
         itens.forEach(System.out::println);
          */
     }
+
 }
