@@ -1,0 +1,19 @@
+Teste Perfomance JMeter:
+
+Inicial sem controle de Threads:
+  - 495185 requests
+  - 11 ms média
+  - 0 ms min
+  - 14775 ms max
+  - 99.94% erro
+  - 6957.0/sec vazão
+  - 1 min 21 segundos
+
+Com Threads:
+  - 21791
+  - 253 ms média
+  - 251 ms min
+  - 259 ms max
+  - 00.00% erro
+  - 361/sec vazão
+  - 1 min
