@@ -1,5 +1,6 @@
 package mx.florinda.cardapio;
 
+import java.math.BigDecimal;
 import java.util.*;
 
 import static mx.florinda.cardapio.ItemCardapio.CategoriaCardapio.*;
@@ -8,6 +9,39 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Database database = new Database();
+
+        // PRECISO ALTERAR O PRECO DE UM ITEM DO CARDAPIO
+        //ItemCardapio item1 = database.itemCardapioPorId(1l).orElseThrow();
+        //System.out.printf("\n%s (%d) => R$ %s", item1.nome(), item1.id(), item1.preco()); // 2.99
+
+        database.alterarPrecoItemCardapio(1L, new BigDecimal("3.99")); // 2.99 => 3.99
+
+        //ItemCardapio item2 = database.itemCardapioPorId(1l).orElseThrow();
+        //System.out.printf("\n%s (%d) => R$ %s", item2.nome(), item2.id(), item2.preco()); // 3.99
+
+        database.alterarPrecoItemCardapio(1L, new BigDecimal("2.99")); // 3.99 => 2.99
+        database.alterarPrecoItemCardapio(1L, new BigDecimal("4.99")); // 2.99 => 4.99
+
+        ItemCardapio item1 = new ItemCardapio(1L, "Refresco", "", BEBIDAS, new BigDecimal("2.99"), null);
+        ItemCardapio item2 = new ItemCardapio(1L, "Refresco", "", BEBIDAS, new BigDecimal("3.99"), null);
+        ItemCardapio item3 = new ItemCardapio(1L, "Refresco", "", BEBIDAS, new BigDecimal("2.99"), null);
+
+        // IDENTITY
+        System.out.println("item1 == item2: " + (item1 == item2));
+        System.out.println("item1 == item3: " + (item1 == item3));
+
+        System.out.println("item1 == item2 (hashcode): " + (item1.hashCode() == item2.hashCode()));
+        System.out.println("item1 == item3 (hashcode): " + (item1.hashCode() == item3.hashCode()));
+
+        System.out.println("item1 equals item2: " + (item1.equals(item2)));
+        System.out.println("item1 equals item3: " + (item1.equals(item3)));
+
+        // PRECISO AUDITAR AS MUDANÇAS DE PREÇOS DOS ITENS DO CARDAPIO
+        database.imprimirRastroAuditoriaPrecos();
+    }
+
+    private void codigosExemplosTeste() throws InterruptedException {
         Database database = new Database();
 
         // PRECISO DE UM HISTORICO DE VISUALIZAÇÃO DO CARDAPIO
@@ -22,10 +56,30 @@ public class Main {
         historico.mostrarTotalItensVisualizados();
         historico.listarVisualizacoes();
 
-    }
+        System.out.println("-------------------------------------------");
 
-    private void codigosExemplosTeste() {
-        Database database = new Database();
+        // PRECISO DE REMOVER UM ITEM DO CARDAPIO
+        Long idParaRemover = 1L;
+        boolean removido = database.removeItemCardapio(idParaRemover);
+        if (removido) {
+            System.out.println("Item removido: " + idParaRemover);
+        } else {
+            System.out.println("Item não encontrado: " + idParaRemover);
+        }
+
+        System.out.println("-------------------------------------------");
+
+        database.listaDeItensCardapio().forEach(System.out::println);
+
+        System.out.println("-------------------------------------------");
+
+        System.out.println("Solicitando GC...");
+        System.gc();
+        Thread.sleep(500);
+
+        historico.mostrarTotalItensVisualizados();
+        historico.listarVisualizacoes();
+
         List<ItemCardapio> itens = database.listaDeItensCardapio();
 
         itens.forEach(System.out::println);
