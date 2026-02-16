@@ -90,4 +90,9 @@ public class Database {
                 System.out.printf(" - %s: %s -> %s\n", itemAntigo.nome(), itemAntigo.preco(), novoPreco));
         System.out.println();
     }
+
+    public void adicionaItemCardapio(ItemCardapio itemCardapio) {
+        itensPorId.put(itemCardapio.id(), itemCardapio);
+    }
+
 }
