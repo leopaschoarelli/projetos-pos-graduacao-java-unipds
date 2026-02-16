@@ -11,7 +11,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -19,6 +18,8 @@ import java.util.concurrent.Executors;
 import static mx.florinda.cardapio.ItemCardapio.CategoriaCardapio.BEBIDAS;
 
 public class ServidorItensCardapioComSocket {
+
+    private static final Database database = new Database();
 
     public static void main(String[] args) throws Exception {
 
@@ -52,69 +53,82 @@ public class ServidorItensCardapioComSocket {
             } while (clientIS.available() > 0);
 
             String request = requestBuilder.toString();
+            System.out.println("----------------------------");
             System.out.println(request);
+            System.out.println("\n\nChegou um novo request");
 
             Thread.sleep(250);
 
-            String urlGetItensCardapio = "GET /itens-cardapio HTTP/1.1";
-            String urlGetItensCardapioTotal = "GET /itens-cardapio/total HTTP/1.1";
-            String urlPostItensCardapio = "POST /itens-cardapio HTTP/1.1";
+            String[] requestChunks = request.split("\r\n\r\n"); // \r CR \n LF (CRLF)
+            String requestLineAndHeaders = requestChunks[0];
+            String[] requestLineAndHeadersChunks = requestLineAndHeaders.split("\r\n");
+            String requestLine = requestLineAndHeadersChunks[0];
+            String[] requestLineChunks = requestLine.split(" ");
+            // method (GET/POST)
+            String method = requestLineChunks[0];
+            // uri
+            String requestUri = requestLineChunks[1];
 
-            if (request.contains(urlGetItensCardapio)) {
-                listarItens(clientSocket);
-            } else if (request.contains(urlGetItensCardapioTotal)) {
-                totalItensLista(clientSocket);
-            } else if (request.contains(urlPostItensCardapio)) {
-                adicionarItem(clientSocket);
-            } 
+            System.out.println(method);
+            System.out.println(requestUri);
+
+            OutputStream clientOS = clientSocket.getOutputStream();
+            PrintStream clientOut = new PrintStream(clientOS);
+            if (method.equals("GET") && requestUri.equals("/itensCardapio.json")) {
+                System.out.println("Chamou arquivo JSON");
+                Path path = Path.of("itensCardapio.json");
+                String json = Files.readString(path);
+
+                clientOut.println("HTTP/1.1 200 OK");
+                clientOut.println("Content-type: application/json; charset=UTF-8");
+                clientOut.println();
+                clientOut.println(json);
+            } else if (method.equals("GET") && requestUri.equals("/itens-cardapio")) {
+                System.out.println("Chamou listagem de itens de cardápio");
+                List<ItemCardapio> listaItensCardapio = database.listaDeItensCardapio();
+
+                Gson gson = new Gson();
+                String json = gson.toJson(listaItensCardapio);
+
+                clientOut.println("HTTP/1.1 200 OK");
+                clientOut.println("Content-type: application/json; charset=UTF-8");
+                clientOut.println();
+                clientOut.println(json);
+            } else if (method.equals("GET") && requestUri.equals("/itens-cardapio/total")) {
+                System.out.println("Chamou total de itens de cardápio");
+                List<ItemCardapio> listaItensCardapio = database.listaDeItensCardapio();
+                int total = listaItensCardapio.size();
+
+                clientOut.println("HTTP/1.1 200 OK");
+                clientOut.println("Content-type: application/json; charset=UTF-8");
+                clientOut.println();
+                clientOut.println(total);
+            } else if (method.equals("POST") && requestUri.equals("/itens-cardapio")) {
+                // curl -v -X POST -d '{"id":12,"nome":"Item 12","descricao":"Item 12.","categoria":"BEBIDAS","preco":2.99}' -H 'Content-Type: application/json' http://localhost:8000/itens-cardapio
+                System.out.println("Chamou adição de item de cardápio");
+
+                if (requestChunks.length == 1) {
+                    clientOut.println("HTTP/1.1 400 Bad Request");
+                    return;
+                }
+
+                String body = requestChunks[1];
+
+                Gson gson = new Gson();
+                ItemCardapio novoItemCardapio = gson.fromJson(body, ItemCardapio.class);
+
+                database.adicionaItemCardapio(novoItemCardapio);
+
+                clientOut.println("HTTP/1.1 201 Created");
+            } else {
+                System.out.println("URI não encontrada: " + requestUri);
+                clientOut.println("HTTP/1.1 404 Not Found");
+            }
 
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
 
     }
-
-    private static void adicionarItem(Socket clientSocket) throws IOException {
-        ItemCardapio itemCardapio = new ItemCardapio(15L, "Refresco do Quico", "Refresco mais refrescante", BEBIDAS, new BigDecimal("2.99"), null);
-        String json = recuperarJson();
-        Gson gson = new Gson();
-        var listaItensCardapio = gson.fromJson(json, List.class);
-        listaItensCardapio.add(itemCardapio);
-        json = gson.toJson(listaItensCardapio);
-        String itemJsonRetorno = new Gson().toJson(itemCardapio);
-        Path path = Path.of("itensCardapio.json");
-        Files.writeString(path, json);
-        retornoClientOut(clientSocket, itemJsonRetorno);
-    }
-
-    private static void listarItens(Socket clientSocket) throws IOException {
-        String json = recuperarJson();
-        retornoClientOut(clientSocket, json);
-    }
-
-    private static String recuperarJson() throws IOException {
-        Path path = Path.of("itensCardapio.json");
-        return Files.readString(path);
-    }
-
-
-    private static void totalItensLista(Socket clientSocket) throws IOException {
-        String json = recuperarJson();
-        Gson gson = new Gson();
-        var listaItensCardapio = gson.fromJson(json, List.class);
-        int totalItens = listaItensCardapio.size();
-        String jsonTotal = "{\"totalItens\": " + totalItens + "}";
-        retornoClientOut(clientSocket, jsonTotal);
-    }
-
-    private static void retornoClientOut(Socket clientSocket, String json) throws IOException {
-        OutputStream clientOS = clientSocket.getOutputStream();
-        PrintStream clientOut = new PrintStream(clientOS);
-        clientOut.println("HTTP/1.1 200 OK");
-        clientOut.println("Content-type: application/json; charset=UTF-8");
-        clientOut.println();
-        clientOut.println(json);
-    }
-
 
 }

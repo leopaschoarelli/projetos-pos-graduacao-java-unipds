@@ -61,7 +61,7 @@ Início da disciplina em: 06/02/2026  ✅
 - Videoaula 07: Networking ✅
 - Videoaula 08: Concurrency ✅
 - Videoaula 09: Concurrency ✅
-- Videoaula 10: Concurrency
+- Videoaula 10: Concurrency ✅
 - Videoaula 11: Concurrency
 - Videoaula 12: JDBC
 - Videoaula 13: JDBC
