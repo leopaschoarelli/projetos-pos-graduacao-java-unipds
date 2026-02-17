@@ -2,11 +2,9 @@ package mx.florinda.cardapio;
 
 import com.google.gson.Gson;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
-import java.math.BigDecimal;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.file.Files;
@@ -15,11 +13,9 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static mx.florinda.cardapio.ItemCardapio.CategoriaCardapio.BEBIDAS;
-
 public class ServidorItensCardapioComSocket {
 
-    private static final Database database = new Database();
+    private static final Database database = new SQLDatabase();
 
     public static void main(String[] args) throws Exception {
 
