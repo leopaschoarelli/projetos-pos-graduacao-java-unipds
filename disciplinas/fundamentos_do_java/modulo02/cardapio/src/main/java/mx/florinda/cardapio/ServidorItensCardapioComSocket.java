@@ -5,11 +5,14 @@ import com.google.gson.Gson;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintStream;
+import java.math.BigDecimal;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -90,6 +93,26 @@ public class ServidorItensCardapioComSocket {
                 clientOut.println("Content-type: application/json; charset=UTF-8");
                 clientOut.println();
                 clientOut.println(json);
+            } else if (method.equals("GET") && requestUri.matches("/itens-cardapio/[0-9]+")) {
+                System.out.println("Chamou listagem de itens de cardápio por id");
+
+                String[] uriChunks = requestUri.split("/");
+                Long id = Long.parseLong(uriChunks[2]);
+
+                ItemCardapio itemCardapio = database.itemCardapioPorId(id).orElse(null);
+
+                if (itemCardapio == null) {
+                    clientOut.println("HTTP/1.1 404 Not Found");
+                    return;
+                }
+
+                Gson gson = new Gson();
+                String json = gson.toJson(itemCardapio);
+
+                clientOut.println("HTTP/1.1 200 OK");
+                clientOut.println("Content-type: application/json; charset=UTF-8");
+                clientOut.println();
+                clientOut.println(json);
             } else if (method.equals("GET") && requestUri.equals("/itens-cardapio/total")) {
                 System.out.println("Chamou total de itens de cardápio");
                 List<ItemCardapio> listaItensCardapio = database.listaDeItensCardapio();
@@ -118,6 +141,36 @@ public class ServidorItensCardapioComSocket {
                 database.adicionaItemCardapio(novoItemCardapio);
 
                 clientOut.println("HTTP/1.1 201 Created");
+            } else if (method.equals("DELETE") && requestUri.matches("/itens-cardapio/[0-9]+")) {
+                System.out.println("Chamou a remoção de itens de cardápio por id");
+
+                String[] uriChunks = requestUri.split("/");
+                Long id = Long.parseLong(uriChunks[2]);
+
+                database.removeItemCardapio(id);
+
+                clientOut.println("HTTP/1.1 200 OK");
+            } else if (method.equals("PATCH") && requestUri.matches("/itens-cardapio/[0-9]+")) {
+                // curl -v -X PATCH -d '{"preco":23.99}' -H 'Content-Type: application/json' http://localhost:8000/itens-cardapio/10
+                System.out.println("Chamou a atualização de itens de cardápio por id");
+
+                String[] uriChunks = requestUri.split("/");
+                Long id = Long.parseLong(uriChunks[2]);
+
+                if (requestChunks.length == 1) {
+                    clientOut.println("HTTP/1.1 400 Bad Request");
+                    return;
+                }
+
+                String body = requestChunks[1];
+
+                Gson gson = new Gson();
+                Map mapa = gson.fromJson(body, Map.class);
+                String novoPreco = mapa.get("preco").toString();
+
+                database.alterarPrecoItemCardapio(id, new BigDecimal(novoPreco));
+
+                clientOut.println("HTTP/1.1 200 OK");
             } else {
                 System.out.println("URI não encontrada: " + requestUri);
                 clientOut.println("HTTP/1.1 404 Not Found");

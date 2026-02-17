@@ -20,10 +20,24 @@ public class Main {
 
         System.out.println("-------------------------------------------");
 
-        //var novoItemCardapio = new ItemCardapio(10L, "Tacos de Carnitas", "Tacos recheados com carne tenra", PRATOS_PRINCIPAIS, new BigDecimal("25.9"), null);
-        //database.adicionaItemCardapio(novoItemCardapio);
+        var novoItemCardapio = new ItemCardapio(null, "Tacos de Carnitas", "Tacos recheados com carne tenra", PRATOS_PRINCIPAIS, new BigDecimal("25.9"), null);
+        database.adicionaItemCardapio(novoItemCardapio);
+
+        ItemCardapio itemCardapio = database.itemCardapioPorId(10L).orElseThrow(() -> new RuntimeException("Item de Cardápio não encontrado"));
+        System.out.println(itemCardapio);
+
+        boolean itemRemovido = database.removeItemCardapio(11L);
+        System.out.println(itemRemovido);
+        System.out.println("-------------------------------------------");
+        ItemCardapio itemCardapio2 = database.itemCardapioPorId(10L).orElseThrow(() -> new RuntimeException("Item de Cardápio não encontrado"));
+        System.out.println("Item antes de alterar: " + itemCardapio2);
+        database.alterarPrecoItemCardapio(itemCardapio2.id(), new BigDecimal("25.00"));
+        itemCardapio2 = database.itemCardapioPorId(10L).orElseThrow(() -> new RuntimeException("Item de Cardápio não encontrado"));
+        System.out.println("Item depois alterar: " + itemCardapio2);
+        System.out.println("-------------------------------------------");
 
     }
+
 
     private void codigosExemplosTeste() throws InterruptedException {
         /*

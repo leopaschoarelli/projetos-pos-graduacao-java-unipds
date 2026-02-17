@@ -59,17 +59,16 @@ public class SQLDatabase implements Database {
 
     @Override
     public void adicionaItemCardapio(ItemCardapio itemCardapio) {
-        String sql = "INSERT INTO item_cardapio (id, nome, descricao, categoria, preco, preco_promocional) VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO item_cardapio (nome, descricao, categoria, preco, preco_promocional) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cardapio", "root", "senha123");
              PreparedStatement ps = connection.prepareStatement(sql);) {
 
-            ps.setLong(1, itemCardapio.id());
-            ps.setString(2, itemCardapio.nome());
-            ps.setString(3, itemCardapio.descricao());
-            ps.setString(4, itemCardapio.categoria().name());
-            ps.setBigDecimal(5, itemCardapio.preco());
-            ps.setBigDecimal(6, itemCardapio.precoPromocional());
+            ps.setString(1, itemCardapio.nome());
+            ps.setString(2, itemCardapio.descricao());
+            ps.setString(3, itemCardapio.categoria().name());
+            ps.setBigDecimal(4, itemCardapio.preco());
+            ps.setBigDecimal(5, itemCardapio.precoPromocional());
 
             ps.execute();
 
@@ -80,17 +79,83 @@ public class SQLDatabase implements Database {
 
     @Override
     public Optional<ItemCardapio> itemCardapioPorId(Long id) {
-        throw new UnsupportedOperationException("TODO");
+        Optional<ItemCardapio> item = Optional.empty();
+
+        String sql = "SELECT id, nome, descricao, categoria, preco, preco_promocional FROM item_cardapio WHERE id = ?";
+
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cardapio", "root", "senha123");
+             PreparedStatement ps = connection.prepareStatement(sql);) {
+
+            ps.setLong(1, id);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                Long idItem = rs.getLong("id");
+                String nome = rs.getString("nome");
+                String descricao = rs.getString("descricao");
+                String categoriaStr = rs.getString("categoria");
+                BigDecimal preco = rs.getBigDecimal("preco");
+                BigDecimal precoPromocional = rs.getBigDecimal("preco_promocional");
+
+                ItemCardapio.CategoriaCardapio categoria = ItemCardapio.CategoriaCardapio.valueOf(categoriaStr);
+
+                return Optional.of(new ItemCardapio(idItem, nome, descricao, categoria, preco, precoPromocional));
+            }
+
+            return item;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public boolean removeItemCardapio(Long itemId) {
-        throw new UnsupportedOperationException("TODO");
+        String sql = "DELETE FROM item_cardapio WHERE id = ?";
+
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cardapio", "root", "senha123");
+             PreparedStatement ps = connection.prepareStatement(sql);) {
+
+            ps.setLong(1, itemId);
+            ps.execute();
+
+            return true;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public boolean alterarPrecoItemCardapio(Long itemId, BigDecimal novoPreco) {
-        throw new UnsupportedOperationException("TODO");
+        String sql = "UPDATE item_cardapio SET preco = ? WHERE id = ?";
+
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cardapio", "root", "senha123");
+             PreparedStatement ps = connection.prepareStatement(sql);) {
+
+            ps.setBigDecimal(1, novoPreco);
+            ps.setLong(2, itemId);
+            ps.execute();
+
+            return true;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public Long maximoId() {
+        String sql = "SELECT MAX(id) FROM item_cardapio";
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/cardapio", "root", "senha123");
+             PreparedStatement ps = connection.prepareStatement(sql);
+             ResultSet rs = ps.executeQuery();) {
+
+            Long maxId = 0L;
+            if (rs.next()) {
+                maxId = rs.getLong(1);
+            }
+
+            return maxId;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
