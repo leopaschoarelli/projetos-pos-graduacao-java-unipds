@@ -9,7 +9,39 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Database database = new Database();
+        SQLDatabase database = new SQLDatabase();
+        List<ItemCardapio> listaDeItensCardapio = database.listaDeItensCardapio();
+        listaDeItensCardapio.forEach(System.out::println);
+
+        System.out.println("-------------------------------------------");
+
+        int totalItensCardapio = database.totalItensCardapio();
+        System.out.println(totalItensCardapio);
+
+        System.out.println("-------------------------------------------");
+
+        var novoItemCardapio = new ItemCardapio(null, "Tacos de Carnitas", "Tacos recheados com carne tenra", PRATOS_PRINCIPAIS, new BigDecimal("25.9"), null);
+        database.adicionaItemCardapio(novoItemCardapio);
+
+        ItemCardapio itemCardapio = database.itemCardapioPorId(10L).orElseThrow(() -> new RuntimeException("Item de Cardápio não encontrado"));
+        System.out.println(itemCardapio);
+
+        boolean itemRemovido = database.removeItemCardapio(11L);
+        System.out.println(itemRemovido);
+        System.out.println("-------------------------------------------");
+        ItemCardapio itemCardapio2 = database.itemCardapioPorId(10L).orElseThrow(() -> new RuntimeException("Item de Cardápio não encontrado"));
+        System.out.println("Item antes de alterar: " + itemCardapio2);
+        database.alterarPrecoItemCardapio(itemCardapio2.id(), new BigDecimal("25.00"));
+        itemCardapio2 = database.itemCardapioPorId(10L).orElseThrow(() -> new RuntimeException("Item de Cardápio não encontrado"));
+        System.out.println("Item depois alterar: " + itemCardapio2);
+        System.out.println("-------------------------------------------");
+
+    }
+
+
+    private void codigosExemplosTeste() throws InterruptedException {
+        /*
+        InMemoryDatabase database = new InMemoryDatabase();
 
         // PRECISO ALTERAR O PRECO DE UM ITEM DO CARDAPIO
         //ItemCardapio item1 = database.itemCardapioPorId(1l).orElseThrow();
@@ -39,10 +71,6 @@ public class Main {
 
         // PRECISO AUDITAR AS MUDANÇAS DE PREÇOS DOS ITENS DO CARDAPIO
         database.imprimirRastroAuditoriaPrecos();
-    }
-
-    private void codigosExemplosTeste() throws InterruptedException {
-        Database database = new Database();
 
         // PRECISO DE UM HISTORICO DE VISUALIZAÇÃO DO CARDAPIO
         HistoricoVisualizacao historico = new HistoricoVisualizacao(database);
@@ -114,6 +142,7 @@ public class Main {
         promocoes.put(SOBREMESA, "O doce perfeito para você!");
         promocoes.put(ENTRADAS, "Começe sua refeição com um toque de sabor!");
         System.out.println(promocoes);
+         */
 
         /*
         if (optionalItem.isPresent()) {
@@ -197,5 +226,4 @@ public class Main {
         itens.forEach(System.out::println);
          */
     }
-
 }
