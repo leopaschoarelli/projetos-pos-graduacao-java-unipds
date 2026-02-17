@@ -30,7 +30,7 @@ Início da disciplina em: 05/02/2026  ✅
 ### Aula ao vivo
 - Construindo Aplicações Cloud Native com Java e Kubernets: Uma aventura com Live Coding
 - Palestras: 1 - Resiliência como pilar para arquiteturas escaláveis
--Sessão Tira-Dúvidas: Fundamentos de Front-End com React (Disciplina 3) com Daniel Xavier
+- Sessão Tira-Dúvidas: Fundamentos de Front-End com React (Disciplina 3) com Daniel Xavier
 - Sessão Tira-Dúvidas: Disciplinas 1, 2 e 3
 - Live SOLID Essencial
 - Java 24 sem enrolação
@@ -52,22 +52,22 @@ Início da disciplina em: 06/02/2026  ✅
 - Videoaula 08: Configuração do ambiente de desenvolvimento no IntelliJ IDEA e Eclipse ✅
 - Videoaula 09: Maven para gestão de dependências ✅
 ### Módulo 2:
-- Videoaula 01: Introdução ao Gradle
-- Videoaula 02: Aprofundando em coleções
-- Videoaula 03: Aprofundando em coleções
-- Videoaula 04: Aprofundando em coleções
-- Videoaula 05: Networking
-- Videoaula 06: Networking
-- Videoaula 07: Networking
-- Videoaula 08: Networking
-- Videoaula 09: Concurrency
-- Videoaula 10: Concurrency
-- Videoaula 11: Concurrency
-- Videoaula 12: JDBC
-- Videoaula 13: JDBC
-- Videoaula 14: Logging
-- Videoaula 15: Internacionalização (i18n)
-- Videoaula 16: Serialização
+- Videoaula 01: Introdução ao Gradle ✅
+- Videoaula 02: Aprofundando em coleções ✅
+- Videoaula 03: Aprofundando em coleções ✅
+- Videoaula 04: Aprofundando em coleções ✅
+- Videoaula 05: Networking ✅
+- Videoaula 06: Networking ✅
+- Videoaula 07: Networking ✅
+- Videoaula 08: Concurrency ✅
+- Videoaula 09: Concurrency ✅
+- Videoaula 10: Concurrency ✅
+- Videoaula 11: Concurrency ✅
+- Videoaula 12: JDBC ✅
+- Videoaula 13: JDBC ✅
+- Videoaula 14: Logging ✅
+- Videoaula 15: Internacionalização (i18n) ✅
+- Videoaula 16: Serialização ✅
 ### Videocast:
 - Videoaula 01:  Inteligência Artificial (IA)
 
