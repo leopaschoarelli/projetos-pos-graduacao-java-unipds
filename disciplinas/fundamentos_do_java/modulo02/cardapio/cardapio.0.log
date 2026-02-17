@@ -1,94 +1,22 @@
-fev. 17, 2026 9:23:14 AM mx.florinda.cardapio.ServidorItensCardapioComSocket main
+fev. 17, 2026 10:20:02 AM mx.florinda.cardapio.ServidorItensCardapioComSocket main
 INFORMAÇÕES: Subiu servidor!
-fev. 17, 2026 9:23:19 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
+fev. 17, 2026 10:20:08 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
 DETALHADO: 
 
 Chegou um novo request
-fev. 17, 2026 9:23:19 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
-DETALHADO: 
-
-Chegou um novo request
-fev. 17, 2026 9:23:20 AM jdk.internal.event.EventHelper logX509CertificateEvent
+fev. 17, 2026 10:20:08 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
+DETALHADO: Chamou listagem de itens de cardápio
+fev. 17, 2026 10:20:09 AM jdk.internal.event.EventHelper logX509CertificateEvent
 DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:924920720, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:20 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:924920720, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:20 AM jdk.internal.event.EventHelper logX509CertificateEvent
+fev. 17, 2026 10:20:09 AM jdk.internal.event.EventHelper logX509CertificateEvent
 DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2204294814, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:20 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2204294814, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:20 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
+fev. 17, 2026 10:20:09 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
 DETALHADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_128_GCM_SHA256, 924920720
-fev. 17, 2026 9:23:20 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
-DETALHADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_128_GCM_SHA256, 924920720
-fev. 17, 2026 9:23:26 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
-DETALHADO: 
-
-Chegou um novo request
-fev. 17, 2026 9:23:27 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:924920720, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:27 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2204294814, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:27 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
-DETALHADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_128_GCM_SHA256, 924920720
-fev. 17, 2026 9:23:28 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
-DETALHADO: 
-
-Chegou um novo request
-fev. 17, 2026 9:23:28 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:924920720, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:28 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2204294814, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:28 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
-DETALHADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_128_GCM_SHA256, 924920720
-fev. 17, 2026 9:23:33 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
-DETALHADO: 
-
-Chegou um novo request
-fev. 17, 2026 9:23:33 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:924920720, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:33 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2204294814, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:33 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
-DETALHADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_128_GCM_SHA256, 924920720
-fev. 17, 2026 9:23:34 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
-DETALHADO: 
-
-Chegou um novo request
-fev. 17, 2026 9:23:34 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:924920720, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:34 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2204294814, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:34 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
-DETALHADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_128_GCM_SHA256, 924920720
-fev. 17, 2026 9:23:34 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
-DETALHADO: 
-
-Chegou um novo request
-fev. 17, 2026 9:23:35 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:924920720, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:35 AM jdk.internal.event.EventHelper logX509CertificateEvent
-DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2204294814, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
-fev. 17, 2026 9:23:35 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
-DETALHADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_128_GCM_SHA256, 924920720
-fev. 17, 2026 9:24:52 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
-DETALHADO: 
-
-Chegou um novo request
-fev. 17, 2026 9:24:52 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
-GRAVE: Erro no servidor
-java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at mx.florinda.cardapio.ServidorItensCardapioComSocket.trataRequisicao(ServidorItensCardapioComSocket.java:78)
-	at mx.florinda.cardapio.ServidorItensCardapioComSocket.lambda$main$0(ServidorItensCardapioComSocket.java:43)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-
-fev. 17, 2026 9:26:15 AM java.lang.Shutdown logRuntimeExit
-DETALHADO: Runtime.exit() called with status: 130
-java.lang.Throwable: Runtime.exit(130)
-	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179)
-	at java.base/java.lang.Shutdown.exit(Shutdown.java:160)
-	at java.base/java.lang.Terminator$1.handle(Terminator.java:51)
-	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:218)
-	at java.base/java.lang.Thread.run(Thread.java:1474)
-
+fev. 17, 2026 10:20:09 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
+DETALHADO: Host: localhost:8000
+fev. 17, 2026 10:20:09 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
+DETALHADO: User-Agent: curl/8.18.0
+fev. 17, 2026 10:20:09 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
+DETALHADO: Accept: application/x-java-serialized-object
+fev. 17, 2026 10:20:09 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
+INFORMAÇÕES: Media type: application/x-java-serialized-object

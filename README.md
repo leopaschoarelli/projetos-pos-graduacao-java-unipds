@@ -30,7 +30,7 @@ Início da disciplina em: 05/02/2026  ✅
 ### Aula ao vivo
 - Construindo Aplicações Cloud Native com Java e Kubernets: Uma aventura com Live Coding
 - Palestras: 1 - Resiliência como pilar para arquiteturas escaláveis
--Sessão Tira-Dúvidas: Fundamentos de Front-End com React (Disciplina 3) com Daniel Xavier
+- Sessão Tira-Dúvidas: Fundamentos de Front-End com React (Disciplina 3) com Daniel Xavier
 - Sessão Tira-Dúvidas: Disciplinas 1, 2 e 3
 - Live SOLID Essencial
 - Java 24 sem enrolação
@@ -67,7 +67,7 @@ Início da disciplina em: 06/02/2026  ✅
 - Videoaula 13: JDBC ✅
 - Videoaula 14: Logging ✅
 - Videoaula 15: Internacionalização (i18n) ✅
-- Videoaula 16: Serialização
+- Videoaula 16: Serialização ✅
 ### Videocast:
 - Videoaula 01:  Inteligência Artificial (IA)
 

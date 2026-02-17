@@ -2,12 +2,11 @@ package mx.florinda.cardapio;
 
 import com.google.gson.Gson;
 
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintStream;
+import java.io.*;
 import java.math.BigDecimal;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.text.NumberFormat;
@@ -101,13 +100,34 @@ public class ServidorItensCardapioComSocket {
                     logger.fine("Chamou listagem de itens de cardápio");
                     List<ItemCardapio> listaItensCardapio = database.listaDeItensCardapio();
 
-                    Gson gson = new Gson();
-                    String json = gson.toJson(listaItensCardapio);
+                    String mediaType = "application/json";
+                    for (int i = 1; i < requestLineAndHeadersChunks.length; i++) {
+                        String header = requestLineAndHeadersChunks[i];
+                        logger.fine(header);
+                        if (header.contains("Accept")) {
+                            mediaType = header.replace("Accept: ", "");
+                            logger.info("Media type: " + mediaType);
+                        }
+                    }
 
-                    clientOut.println("HTTP/1.1 200 OK");
-                    clientOut.println("Content-type: application/json; charset=UTF-8");
-                    clientOut.println();
-                    clientOut.println(json);
+                    byte[] body;
+
+                    if ("application/x-java-serialized-object".equals(mediaType)) {
+                        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                        var oos = new ObjectOutputStream(baos);
+                        oos.writeObject(listaItensCardapio);
+                        body = baos.toByteArray();
+                    } else {
+                        Gson gson = new Gson();
+                        String json = gson.toJson(listaItensCardapio);
+
+                        body = json.getBytes(StandardCharsets.UTF_8);
+                    }
+
+
+                    clientOS.write("HTTP/1.1 200 OK\r\n".getBytes());
+                    clientOS.write(("Content-type: " + mediaType + "; charset=UTF-8\r\n\r\n").getBytes(StandardCharsets.UTF_8));
+                    clientOS.write(body);
                 } else if (method.equals("GET") && requestUri.matches("/itens-cardapio/[0-9]+")) {
                     logger.fine("Chamou listagem de itens de cardápio por id");
 
