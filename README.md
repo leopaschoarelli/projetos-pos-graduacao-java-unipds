@@ -69,7 +69,7 @@ Início da disciplina em: 06/02/2026  ✅
 - Videoaula 15: Internacionalização (i18n) ✅
 - Videoaula 16: Serialização ✅
 ### Videocast:
-- Videoaula 01:  Inteligência Artificial (IA)
+- Videoaula 01:  Inteligência Artificial (IA) ✅
 
 ## Desenvolvimento de Aplicações Back-End com Spring Boot e Quarkus
 
