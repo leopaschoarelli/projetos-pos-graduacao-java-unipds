@@ -65,7 +65,7 @@ Início da disciplina em: 06/02/2026  ✅
 - Videoaula 11: Concurrency ✅
 - Videoaula 12: JDBC ✅
 - Videoaula 13: JDBC ✅
-- Videoaula 14: Logging
+- Videoaula 14: Logging ✅
 - Videoaula 15: Internacionalização (i18n)
 - Videoaula 16: Serialização
 ### Videocast:

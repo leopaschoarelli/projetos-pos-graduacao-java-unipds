@@ -1,0 +1,23 @@
+fev. 17, 2026 7:59:34 AM mx.florinda.cardapio.ServidorItensCardapioComSocket main
+INFORMAÇÕES: Subiu servidor!
+fev. 17, 2026 7:59:37 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
+DETALHADO: 
+
+Chegou um novo request
+fev. 17, 2026 7:59:38 AM mx.florinda.cardapio.ServidorItensCardapioComSocket trataRequisicao
+DETALHADO: Chamou listagem de itens de cardápio por id
+fev. 17, 2026 7:59:38 AM jdk.internal.event.EventHelper logX509CertificateEvent
+DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:924920720, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
+fev. 17, 2026 7:59:38 AM jdk.internal.event.EventHelper logX509CertificateEvent
+DETALHADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_9.6.0_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2204294814, Valid from:16/02/2026 19:33, Valid until:14/02/2036 19:33
+fev. 17, 2026 7:59:38 AM jdk.internal.event.EventHelper logTLSHandshakeEvent
+DETALHADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_128_GCM_SHA256, 924920720
+fev. 17, 2026 8:03:51 AM java.lang.Shutdown logRuntimeExit
+DETALHADO: Runtime.exit() called with status: 130
+java.lang.Throwable: Runtime.exit(130)
+	at java.base/java.lang.Shutdown.logRuntimeExit(Shutdown.java:179)
+	at java.base/java.lang.Shutdown.exit(Shutdown.java:160)
+	at java.base/java.lang.Terminator$1.handle(Terminator.java:51)
+	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:218)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
