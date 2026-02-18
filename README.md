@@ -28,7 +28,7 @@ Início da disciplina em: 05/02/2026  ✅
 - Videoaula 18: Object, Classes Wrapper e JavaDoc ✅
 - Videoaula 19: Jars e Exceptions ✅
 ### Aula ao vivo
-- Construindo Aplicações Cloud Native com Java e Kubernets: Uma aventura com Live Coding
+- Construindo Aplicações Cloud Native com Java e Kubernets: Uma aventura com Live Coding ✅
 - Palestras: 1 - Resiliência como pilar para arquiteturas escaláveis
 - Sessão Tira-Dúvidas: Fundamentos de Front-End com React (Disciplina 3) com Daniel Xavier ✅
 - Sessão Tira-Dúvidas: Disciplinas 1, 2 e 3 ✅
