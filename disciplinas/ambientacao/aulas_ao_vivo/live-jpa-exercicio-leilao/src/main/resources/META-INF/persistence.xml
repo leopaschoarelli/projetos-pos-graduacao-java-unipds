@@ -1,0 +1,29 @@
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+
+    <persistence-unit name="leilao">
+
+        <class>br.com.unipds.leilao.modelo.Usuario</class>
+        <class>br.com.unipds.leilao.modelo.FormaDePagamento</class>
+        <class>br.com.unipds.leilao.modelo.Leilao</class>
+        <class>br.com.unipds.leilao.modelo.Lance</class>
+        <class>br.com.unipds.leilao.modelo.Item</class>
+        <class>br.com.unipds.leilao.modelo.ContaBancaria</class>
+        <class>br.com.unipds.leilao.modelo.CartaoDeCredito</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost/leilao"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="admin123"/>
+
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.highlight_sql" value="true"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+
+        </properties>
+    </persistence-unit>
+
+</persistence>
