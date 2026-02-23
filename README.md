@@ -34,7 +34,7 @@ Início da disciplina em: 05/02/2026  ✅
 - Sessão Tira-Dúvidas: Disciplinas 1, 2 e 3 ✅
 - Live SOLID Essencial
 - Java 24 sem enrolação ✅
-- JPA na prática
+- JPA na prática ✅
 - Refatoração
 
 ## Fundamentos do Java
