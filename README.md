@@ -5,7 +5,7 @@ Neste repositório estarão os projetos desenvolvidos durante o curso de Pós Gr
 
 ## Ambientação:
 
-Início da disciplina em: 05/02/2026  ✅
+Início da disciplina em: 05/02/2026 ✅
 
 ### Introdução ao Java
 - Videoaula 01: O que é Java? ✅
@@ -39,7 +39,7 @@ Início da disciplina em: 05/02/2026  ✅
 
 ## Fundamentos do Java
 
-Início da disciplina em: 06/02/2026  ✅
+Início da disciplina em: 06/02/2026 ✅
 
 ### Módulo 1:
 - Videoaula 01: Por que Java? ✅
@@ -73,7 +73,55 @@ Início da disciplina em: 06/02/2026  ✅
 
 ## Desenvolvimento de Aplicações Back-End com Spring Boot e Quarkus
 
-Contéudo bloqueado. Início da disciplina em: 04/03/2026 🚫
+Início da disciplina em: 04/03/2026 ✅
+
+### Módulo 1:
+- Videoaula 01: Quarkus 
+- Videoaula 02: Quarkus 
+- Videoaula 03: Quarkus 
+- Videoaula 04: Quarkus 
+- Videoaula 05: Quarkus 
+- Videoaula 06: Quarkus 
+- Videoaula 07: Quarkus 
+- Videoaula 08: Quarkus 
+- Videoaula 09: Quarkus 
+### Módulo 2:
+- Videoaula 01: Spring 
+- Videoaula 02: Spring 
+- Videoaula 03: Spring 
+- Videoaula 04: Spring 
+- Videoaula 05: Spring 
+- Videoaula 06: Spring 
+- Videoaula 07: Spring 
+- Videoaula 08: Spring 
+- Videoaula 09: Spring 
+- Videoaula 10: Spring 
+### Módulo 3:
+- Videoaula 01: Kafka e Quarkus 
+- Videoaula 02: Kafka e Quarkus 
+- Videoaula 03: Kafka e Quarkus 
+- Videoaula 04: Kafka e Quarkus 
+- Videoaula 05: Kafka e Quarkus 
+### Módulo 4:
+- Videoaula 01: Produtividade com ferramentas de IA para desenvolvedores 
+- Videoaula 02: Overview e Fundamentos 
+- Videoaula 03: Como um LLM "pensa" e o papel do LangChain4J 
+- Videoaula 04: Construindo seu primeiro AI Service 
+- Videoaula 05: Porque RAG? Arquitetura de um Pipeline de conhecimento 
+- Videoaula 06: Ingestão de Dados com EasyRAG 
+- Videoaula 07: Vector Database 
+- Videoaula 08: RAG com Vector Database na prática 
+- Videoaula 09: De ChatBots a Agentes Autônomos 
+- Videoaula 10: Capacidades de Agentes com Tools 
+- Videoaula 11: Conectando Tools e Gerenciando Memória 
+- Videoaula 12: Gerenciamento de Estado e Validação 
+- Videoaula 13: Model Context Protocol (MCP): Teoria e Arquitetura 
+- Videoaula 14: Criando o MCP Server 
+- Videoaula 15: Conectando e Integrando o MCP Client 
+- Videoaula 16: Novos Vetores de Ataque e GuardRails 
+- Videoaula 17: GuarRails de saída: garantia de qualidade e auto-correção 
+### Podcast:
+- Podcast 01:  Podcast 01
 
 ## Fundamentos de Front-End com React
 
