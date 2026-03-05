@@ -80,7 +80,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 02: Quarkus - Configuração de Projetos e Extensões ✅
 - Videoaula 03: Quarkus - GraalVM: Overview ✅
 - Videoaula 04: Quarkus - Compilação Nativa ✅
-- Videoaula 05: Quarkus 
+- Videoaula 05: Quarkus - Desenvolvimento e Consumo de APIs REST ✅
 - Videoaula 06: Quarkus 
 - Videoaula 07: Quarkus 
 - Videoaula 08: Quarkus 
