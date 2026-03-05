@@ -78,7 +78,7 @@ Início da disciplina em: 04/03/2026 ✅
 ### Módulo 1:
 - Videoaula 01: Quarkus - Introdução ao Quarkus, Cloud Native e Kubernetes Native ✅
 - Videoaula 02: Quarkus - Configuração de Projetos e Extensões ✅
-- Videoaula 03: Quarkus 
+- Videoaula 03: Quarkus - GraalVM: Overview ✅
 - Videoaula 04: Quarkus 
 - Videoaula 05: Quarkus 
 - Videoaula 06: Quarkus 
