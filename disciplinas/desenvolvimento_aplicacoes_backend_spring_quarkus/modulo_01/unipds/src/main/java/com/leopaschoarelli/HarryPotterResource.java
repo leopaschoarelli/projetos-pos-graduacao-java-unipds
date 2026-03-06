@@ -6,17 +6,17 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
-@Path("starwars")
+@Path("harrypotter")
 @Produces(MediaType.APPLICATION_JSON)
-public class StarWarsResource {
+public class HarryPotterResource {
 
     @RestClient
-    StarWarsService starWarsService;
+    HarryPotterService harryPotterService;
 
     @GET
-    @Path("starships")
-    public String getStarships() {
-        return starWarsService.getStarships();
+    @Path("spells")
+    public String getSpells() {
+        return harryPotterService.getSpells();
     }
 
 }
