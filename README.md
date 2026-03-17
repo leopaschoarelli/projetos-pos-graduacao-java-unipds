@@ -83,7 +83,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 05: Quarkus - Desenvolvimento e Consumo de APIs REST ✅
 - Videoaula 06: Quarkus - Uso da API Fault Tolenrance ✅
 - Videoaula 07: Quarkus - Persistência de Dados com Panache ✅
-- Videoaula 08: Quarkus 
+- Videoaula 08: Quarkus - Autenticação e Segurança com JWT e RBAC ✅
 - Videoaula 09: Quarkus 
 ### Módulo 2:
 - Videoaula 01: Spring 
