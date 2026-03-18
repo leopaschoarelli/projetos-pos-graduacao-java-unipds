@@ -1,5 +1,6 @@
 package com.leopaschoarelli;
 
+import io.micrometer.core.annotation.Counted;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
@@ -12,6 +13,7 @@ import java.util.List;
 public class PessoaResource {
 
     @GET
+    @Counted(value = "counted.getPessoa")
     public List<Pessoa> getPessoas() {
         return Pessoa.listAll();
     }

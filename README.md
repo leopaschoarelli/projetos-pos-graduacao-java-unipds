@@ -84,7 +84,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 06: Quarkus - Uso da API Fault Tolenrance ✅
 - Videoaula 07: Quarkus - Persistência de Dados com Panache ✅
 - Videoaula 08: Quarkus - Autenticação e Segurança com JWT e RBAC ✅
-- Videoaula 09: Quarkus 
+- Videoaula 09: Quarkus - Observabilidade com OpenTelemetry ✅
 ### Módulo 2:
 - Videoaula 01: Spring 
 - Videoaula 02: Spring 
