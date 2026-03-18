@@ -76,15 +76,15 @@ Início da disciplina em: 06/02/2026 ✅
 Início da disciplina em: 04/03/2026 ✅
 
 ### Módulo 1:
-- Videoaula 01: Quarkus 
-- Videoaula 02: Quarkus 
-- Videoaula 03: Quarkus 
-- Videoaula 04: Quarkus 
-- Videoaula 05: Quarkus 
-- Videoaula 06: Quarkus 
-- Videoaula 07: Quarkus 
-- Videoaula 08: Quarkus 
-- Videoaula 09: Quarkus 
+- Videoaula 01: Quarkus - Introdução ao Quarkus, Cloud Native e Kubernetes Native ✅
+- Videoaula 02: Quarkus - Configuração de Projetos e Extensões ✅
+- Videoaula 03: Quarkus - GraalVM: Overview ✅
+- Videoaula 04: Quarkus - Compilação Nativa ✅
+- Videoaula 05: Quarkus - Desenvolvimento e Consumo de APIs REST ✅
+- Videoaula 06: Quarkus - Uso da API Fault Tolenrance ✅
+- Videoaula 07: Quarkus - Persistência de Dados com Panache ✅
+- Videoaula 08: Quarkus - Autenticação e Segurança com JWT e RBAC ✅
+- Videoaula 09: Quarkus - Observabilidade com OpenTelemetry ✅
 ### Módulo 2:
 - Videoaula 01: Spring 
 - Videoaula 02: Spring 
