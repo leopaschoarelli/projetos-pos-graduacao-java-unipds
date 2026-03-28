@@ -31,4 +31,12 @@ public class SubscriptionID {
         this.session = session;
     }
 
+    @Override
+    public String toString() {
+        return "SubscriptionID{" +
+                "user=" + user +
+                ", session=" + session +
+                '}';
+    }
+
 }

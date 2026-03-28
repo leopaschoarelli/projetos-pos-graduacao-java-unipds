@@ -90,7 +90,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 02: Spring - Criação de APIs Rest ✅
 - Videoaula 03: Spring - Arquitetura Multicamadas e Documentação ✅
 - Videoaula 04: Spring - Integração com JPA ✅
-- Videoaula 05: Spring 
+- Videoaula 05: Spring - JPA - Services, Query By Method Name e Conclusão da API ✅
 - Videoaula 06: Spring 
 - Videoaula 07: Spring 
 - Videoaula 08: Spring 

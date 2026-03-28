@@ -64,4 +64,15 @@ public class Session {
         this.conference = conference;
     }
 
+    @Override
+    public String toString() {
+        return "Session{" +
+                "idSession=" + idSession +
+                ", title='" + title + '\'' +
+                ", startDate=" + startDate +
+                ", startTime=" + startTime +
+                ", conference=" + conference +
+                '}';
+    }
+
 }
