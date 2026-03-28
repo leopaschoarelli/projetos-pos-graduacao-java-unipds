@@ -86,7 +86,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 08: Quarkus - Autenticação e Segurança com JWT e RBAC ✅
 - Videoaula 09: Quarkus - Observabilidade com OpenTelemetry ✅
 ### Módulo 2:
-- Videoaula 01: Spring 
+- Videoaula 01: Spring - Introdução e Configuração do Projeto ✅
 - Videoaula 02: Spring 
 - Videoaula 03: Spring 
 - Videoaula 04: Spring 
