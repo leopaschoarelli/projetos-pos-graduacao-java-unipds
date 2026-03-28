@@ -55,4 +55,14 @@ public class Subscription {
         this.uniqueID = uniqueID;
     }
 
+    @Override
+    public String toString() {
+        return "Subscription{" +
+                "id=" + id +
+                ", createdAt=" + createdAt +
+                ", level=" + level +
+                ", uniqueID='" + uniqueID + '\'' +
+                '}';
+    }
+
 }
