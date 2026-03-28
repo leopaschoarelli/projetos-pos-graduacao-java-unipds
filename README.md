@@ -88,7 +88,7 @@ Início da disciplina em: 04/03/2026 ✅
 ### Módulo 2:
 - Videoaula 01: Spring - Introdução e Configuração do Projeto ✅
 - Videoaula 02: Spring - Criação de APIs Rest ✅
-- Videoaula 03: Spring 
+- Videoaula 03: Spring - Arquitetura Multicamadas e Documentação ✅
 - Videoaula 04: Spring 
 - Videoaula 05: Spring 
 - Videoaula 06: Spring 
