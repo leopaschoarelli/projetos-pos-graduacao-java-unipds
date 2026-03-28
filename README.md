@@ -87,7 +87,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 09: Quarkus - Observabilidade com OpenTelemetry ✅
 ### Módulo 2:
 - Videoaula 01: Spring - Introdução e Configuração do Projeto ✅
-- Videoaula 02: Spring 
+- Videoaula 02: Spring - Criação de APIs Rest ✅
 - Videoaula 03: Spring 
 - Videoaula 04: Spring 
 - Videoaula 05: Spring 
