@@ -125,7 +125,35 @@ Início da disciplina em: 04/03/2026 ✅
 
 ## Fundamentos de Front-End com React
 
-Contéudo bloqueado. Início da disciplina em: 30/03/2026 🚫
+Início da disciplina em: 30/03/2026 ✅
+
+### Módulo 1:
+- Videoaula 01: Introdução ao Front-end moderno
+- Videoaula 02: Primeiros passos com React (Parte 1)
+- Videoaula 03: Primeiros passos com React (Parte 2)
+- Videoaula 04: Primeiros passos com React (Parte 3)
+- Videoaula 05: Primeiros passos com React (Parte 4)
+- Videoaula 06: Comunicação com APIs (Parte 1)
+- Videoaula 07: Comunicação com APIs (Parte 2)
+- Videoaula 08: Autenticação (Parte 1)
+- Videoaula 09: Autenticação (Parte 2)
+- Videoaula 10: Autenticação (Parte 3)
+- Videoaula 11: Autenticação (Parte 4)
+- Videoaula 12: Autenticação (Parte 5)
+- Videoaula 13: Projeto Guiado: Mini App Completo (Parte 1)
+- Videoaula 14: Projeto Guiado: Mini App Completo (Parte 2)
+- Videoaula 15: Projeto Guiado: Mini App Completo (Parte 3)
+- Videoaula 16: Projeto Guiado: Mini App Completo (Parte 4)
+- Videoaula 17: Projeto Guiado: Mini App Completo (Parte 5)
+- Videoaula 18: Projeto Guiado: Mini App Completo (Parte 6)
+- Videoaula 19: Projeto Guiado: Mini App Completo (Parte 7)
+- Videoaula 20: Projeto Guiado: Mini App Completo (Parte 8)
+- Videoaula 21: Entrevistas Técnicas e Desafios Reais (Parte 1)
+- Videoaula 22: Entrevistas Técnicas e Desafios Reais (Parte 2)
+- Videoaula 23: Entrevistas Técnicas e Desafios Reais (Parte 3)
+- Videoaula 24: Entrevistas Técnicas e Desafios Reais (Parte 4)
+### Videocast:
+- Videocast 01:  Videocast: Roadmap de Estudos: Como criar um plano para os resultados que você deseja
 
 ## Arquitetura de Sistemas
 
