@@ -93,7 +93,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 05: Spring - JPA - Services, Query By Method Name e Conclusão da API ✅
 - Videoaula 06: Spring - Controle Transacional ✅
 - Videoaula 07: Spring - Autenticação com JWT e OAuth ✅
-- Videoaula 08: Spring 
+- Videoaula 08: Spring - Geração de Token / Login + OAuth ✅
 - Videoaula 09: Spring 
 - Videoaula 10: Spring 
 ### Módulo 3:
