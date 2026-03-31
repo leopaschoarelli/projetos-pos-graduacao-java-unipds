@@ -95,7 +95,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 07: Spring - Autenticação com JWT e OAuth ✅
 - Videoaula 08: Spring - Geração de Token / Login + OAuth ✅
 - Videoaula 09: Spring - Exemplo de OAuth2 com Google ✅
-- Videoaula 10: Spring 
+- Videoaula 10: Spring - WebFlux ✅
 ### Módulo 3:
 - Videoaula 01: Kafka e Quarkus 
 - Videoaula 02: Kafka e Quarkus 
