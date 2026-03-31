@@ -86,16 +86,16 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 08: Quarkus - Autenticação e Segurança com JWT e RBAC ✅
 - Videoaula 09: Quarkus - Observabilidade com OpenTelemetry ✅
 ### Módulo 2:
-- Videoaula 01: Spring 
-- Videoaula 02: Spring 
-- Videoaula 03: Spring 
-- Videoaula 04: Spring 
-- Videoaula 05: Spring 
-- Videoaula 06: Spring 
-- Videoaula 07: Spring 
-- Videoaula 08: Spring 
-- Videoaula 09: Spring 
-- Videoaula 10: Spring 
+- Videoaula 01: Spring - Introdução e Configuração do Projeto ✅
+- Videoaula 02: Spring - Criação de APIs Rest ✅
+- Videoaula 03: Spring - Arquitetura Multicamadas e Documentação ✅
+- Videoaula 04: Spring - Integração com JPA ✅
+- Videoaula 05: Spring - JPA - Services, Query By Method Name e Conclusão da API ✅
+- Videoaula 06: Spring - Controle Transacional ✅
+- Videoaula 07: Spring - Autenticação com JWT e OAuth ✅
+- Videoaula 08: Spring - Geração de Token / Login + OAuth ✅
+- Videoaula 09: Spring - Exemplo de OAuth2 com Google ✅
+- Videoaula 10: Spring - WebFlux ✅
 ### Módulo 3:
 - Videoaula 01: Kafka e Quarkus 
 - Videoaula 02: Kafka e Quarkus 
