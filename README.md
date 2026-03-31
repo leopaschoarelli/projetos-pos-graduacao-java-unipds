@@ -94,7 +94,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 06: Spring - Controle Transacional ✅
 - Videoaula 07: Spring - Autenticação com JWT e OAuth ✅
 - Videoaula 08: Spring - Geração de Token / Login + OAuth ✅
-- Videoaula 09: Spring 
+- Videoaula 09: Spring - Exemplo de OAuth2 com Google ✅
 - Videoaula 10: Spring 
 ### Módulo 3:
 - Videoaula 01: Kafka e Quarkus 
