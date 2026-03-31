@@ -100,7 +100,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 01: Kafka e Quarkus - O Que é Mensageria? ✅
 - Videoaula 02: Kafka e Quarkus - Fundamentos de Kafka ✅
 - Videoaula 03: Kafka e Quarkus - Consumidor com Quarkus Reactive Messaging ✅
-- Videoaula 04: Kafka e Quarkus 
+- Videoaula 04: Kafka e Quarkus - Produtor com Quarkus Reactive Messaging ✅
 - Videoaula 05: Kafka e Quarkus 
 ### Módulo 4:
 - Videoaula 01: Produtividade com ferramentas de IA para desenvolvedores 
