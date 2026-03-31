@@ -98,7 +98,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 10: Spring - WebFlux ✅
 ### Módulo 3:
 - Videoaula 01: Kafka e Quarkus - O Que é Mensageria? ✅
-- Videoaula 02: Kafka e Quarkus 
+- Videoaula 02: Kafka e Quarkus - Fundamentos de Kafka ✅
 - Videoaula 03: Kafka e Quarkus 
 - Videoaula 04: Kafka e Quarkus 
 - Videoaula 05: Kafka e Quarkus 
