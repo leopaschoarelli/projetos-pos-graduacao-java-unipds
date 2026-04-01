@@ -38,7 +38,9 @@ public class PagamentoResource {
                       pagamento.status = StatusPagamento.CONFIRMADO;
 
                       // produzir a mensagem de pagamento confirmado para o Kafka
-                      emitter.send(new PagamentoConfirmadoEvent(pagamento.id, pagamento.pedidoId, pagamento.valor));
+                      PagamentoConfirmadoEvent evento =
+                              new PagamentoConfirmadoEvent(pagamento.id, pagamento.pedidoId, pagamento.valor);
+                      emitter.send(evento);
 
                     }));
   }

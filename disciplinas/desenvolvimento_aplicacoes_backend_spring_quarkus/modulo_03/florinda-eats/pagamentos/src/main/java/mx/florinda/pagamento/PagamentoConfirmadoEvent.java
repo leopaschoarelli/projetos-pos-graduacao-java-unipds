@@ -14,6 +14,18 @@ public class PagamentoConfirmadoEvent {
         this.valor = valor;
     }
 
+    public Long getPagamentoId() {
+        return pagamentoId;
+    }
+
+    public Long getPedidoId() {
+        return pedidoId;
+    }
+
+    public BigDecimal getValor() {
+        return valor;
+    }
+
     @Override
     public String toString() {
         return "PagamentoConfirmadoEvent{" +
@@ -22,5 +34,5 @@ public class PagamentoConfirmadoEvent {
                 ", valor=" + valor +
                 '}';
     }
-    
+
 }
