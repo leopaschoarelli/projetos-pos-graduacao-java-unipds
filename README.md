@@ -121,7 +121,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 16: Novos Vetores de Ataque e GuardRails ✅
 - Videoaula 17: GuarRails de saída: garantia de qualidade e auto-correção ✅
 ### Podcast:
-- Podcast 01:  Podcast 01
+- Podcast 01:  Podcast 01 - Fullstack, Backend, Frontend: diferenças, salários e mercado ✅
 
 ## Fundamentos de Front-End com React
 
