@@ -110,7 +110,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 05: Porque RAG? Arquitetura de um Pipeline de conhecimento ✅
 - Videoaula 06: Ingestão de Dados com EasyRAG ✅
 - Videoaula 07: Vector Database ✅
-- Videoaula 08: RAG com Vector Database na prática 
+- Videoaula 08: RAG com Vector Database na prática ✅
 - Videoaula 09: De ChatBots a Agentes Autônomos 
 - Videoaula 10: Capacidades de Agentes com Tools 
 - Videoaula 11: Conectando Tools e Gerenciando Memória 
