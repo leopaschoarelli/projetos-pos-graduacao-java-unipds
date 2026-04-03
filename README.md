@@ -103,23 +103,23 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 04: Kafka e Quarkus - Produtor com Quarkus Reactive Messaging ✅
 - Videoaula 05: Kafka e Quarkus - Resolução da Atividade Prática ✅
 ### Módulo 4:
-- Videoaula 01: Produtividade com ferramentas de IA para desenvolvedores 
-- Videoaula 02: Overview e Fundamentos 
-- Videoaula 03: Como um LLM "pensa" e o papel do LangChain4J 
-- Videoaula 04: Construindo seu primeiro AI Service 
-- Videoaula 05: Porque RAG? Arquitetura de um Pipeline de conhecimento 
-- Videoaula 06: Ingestão de Dados com EasyRAG 
-- Videoaula 07: Vector Database 
-- Videoaula 08: RAG com Vector Database na prática 
-- Videoaula 09: De ChatBots a Agentes Autônomos 
-- Videoaula 10: Capacidades de Agentes com Tools 
-- Videoaula 11: Conectando Tools e Gerenciando Memória 
-- Videoaula 12: Gerenciamento de Estado e Validação 
-- Videoaula 13: Model Context Protocol (MCP): Teoria e Arquitetura 
-- Videoaula 14: Criando o MCP Server 
-- Videoaula 15: Conectando e Integrando o MCP Client 
-- Videoaula 16: Novos Vetores de Ataque e GuardRails 
-- Videoaula 17: GuarRails de saída: garantia de qualidade e auto-correção 
+- Videoaula 01: Produtividade com ferramentas de IA para desenvolvedores ✅
+- Videoaula 02: Overview e Fundamentos ✅
+- Videoaula 03: Como um LLM "pensa" e o papel do LangChain4J ✅
+- Videoaula 04: Construindo seu primeiro AI Service ✅
+- Videoaula 05: Porque RAG? Arquitetura de um Pipeline de conhecimento ✅
+- Videoaula 06: Ingestão de Dados com EasyRAG ✅
+- Videoaula 07: Vector Database ✅
+- Videoaula 08: RAG com Vector Database na prática ✅
+- Videoaula 09: De ChatBots a Agentes Autônomos ✅
+- Videoaula 10: Capacidades de Agentes com Tools ✅
+- Videoaula 11: Conectando Tools e Gerenciando Memória ✅
+- Videoaula 12: Gerenciamento de Estado e Validação ✅
+- Videoaula 13: Model Context Protocol (MCP): Teoria e Arquitetura ✅
+- Videoaula 14: Criando o MCP Server ✅
+- Videoaula 15: Conectando e Integrando o MCP Client ✅
+- Videoaula 16: Novos Vetores de Ataque e GuardRails ✅
+- Videoaula 17: GuarRails de saída: garantia de qualidade e auto-correção ✅
 ### Podcast:
 - Podcast 01:  Podcast 01
 
