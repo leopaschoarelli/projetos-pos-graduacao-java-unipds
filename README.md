@@ -105,7 +105,7 @@ Início da disciplina em: 04/03/2026 ✅
 ### Módulo 4:
 - Videoaula 01: Produtividade com ferramentas de IA para desenvolvedores ✅
 - Videoaula 02: Overview e Fundamentos ✅
-- Videoaula 03: Como um LLM "pensa" e o papel do LangChain4J 
+- Videoaula 03: Como um LLM "pensa" e o papel do LangChain4J ✅
 - Videoaula 04: Construindo seu primeiro AI Service 
 - Videoaula 05: Porque RAG? Arquitetura de um Pipeline de conhecimento 
 - Videoaula 06: Ingestão de Dados com EasyRAG 
