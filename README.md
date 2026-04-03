@@ -117,7 +117,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 12: Gerenciamento de Estado e Validação ✅
 - Videoaula 13: Model Context Protocol (MCP): Teoria e Arquitetura ✅
 - Videoaula 14: Criando o MCP Server ✅
-- Videoaula 15: Conectando e Integrando o MCP Client 
+- Videoaula 15: Conectando e Integrando o MCP Client ✅
 - Videoaula 16: Novos Vetores de Ataque e GuardRails 
 - Videoaula 17: GuarRails de saída: garantia de qualidade e auto-correção 
 ### Podcast:
