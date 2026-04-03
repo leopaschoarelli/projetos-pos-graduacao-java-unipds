@@ -119,7 +119,7 @@ Início da disciplina em: 04/03/2026 ✅
 - Videoaula 14: Criando o MCP Server ✅
 - Videoaula 15: Conectando e Integrando o MCP Client ✅
 - Videoaula 16: Novos Vetores de Ataque e GuardRails ✅
-- Videoaula 17: GuarRails de saída: garantia de qualidade e auto-correção 
+- Videoaula 17: GuarRails de saída: garantia de qualidade e auto-correção ✅
 ### Podcast:
 - Podcast 01:  Podcast 01
 
