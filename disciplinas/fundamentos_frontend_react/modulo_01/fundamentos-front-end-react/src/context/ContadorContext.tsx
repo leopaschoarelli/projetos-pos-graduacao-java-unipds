@@ -31,7 +31,7 @@ export default function ContadorProvider({
     }, []);
 
     useEffect(() => {
-        if (contador) {
+        if (contador !== null) {
             localStorage.setItem('contador', contador.toString());
         }
     }, [contador]);
