@@ -1,9 +1,14 @@
+"use client";
+
 import { FC } from "react";
 
-export const MeuNome: FC<{name: string, age: number, birthDate: Date}> = (props) => {
+type MeuNomeProps = { name: string; age: number; birthDate: Date };
+
+export const MeuNome: FC<MeuNomeProps> = ({ name, age, birthDate }) => { 
     return (
-        <>
-        <p>Sou o {props.name}, tenho {props.age} anos porque nasci no dia {props.birthDate.toLocaleDateString("pt-BR")}</p>
-        </>
+    <p>
+        Sou o {name}, tenho {age} anos porque nasci no dia{" "}
+        {birthDate.toLocaleDateString("pt-BR")}
+    </p>
     );
 };

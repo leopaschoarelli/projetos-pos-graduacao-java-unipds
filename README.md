@@ -130,7 +130,7 @@ Início da disciplina em: 30/03/2026 ✅
 ### Módulo 1:
 - Videoaula 01: Introdução ao Front-end moderno ✅
 - Videoaula 02: Primeiros passos com React (Parte 1) ✅
-- Videoaula 03: Primeiros passos com React (Parte 2)
+- Videoaula 03: Primeiros passos com React (Parte 2) ✅
 - Videoaula 04: Primeiros passos com React (Parte 3)
 - Videoaula 05: Primeiros passos com React (Parte 4)
 - Videoaula 06: Comunicação com APIs (Parte 1)
