@@ -13,16 +13,16 @@ export const ContadorGlobal = () => {
             <p>Número atual: {contador}</p>
             <div className="flex gap-x-2">
                 <Button onClick={() => {
-                    setContador((c) => c - 3);
+                    setContador((c) => (c ?? 0) - 3);
                 }}>-3</Button>
                 <Button onClick={() => {
-                    setContador((c) => c - 1);
+                    setContador((c) => (c ?? 0) - 1);
                 }}>-1</Button>
                 <Button onClick={() => {
-                    setContador((c) => c + 1);
+                    setContador((c) => (c ?? 0) + 1);
                 }}>+1</Button>
                 <Button onClick={() => {
-                    setContador((c) => c + 3);
+                    setContador((c) => (c ?? 0) + 3);
                 }}>+3</Button>
             </div>
       </div>
