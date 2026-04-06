@@ -21,8 +21,18 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link className="underline" href="/nivel-3">
-              - Nível 3
+            <Link className="underline" href="/nivel-3/server-side">
+              - Nível 3 - Server Side
+            </Link>
+          </li>
+          <li>
+            <Link className="underline" href="/nivel-3/client-side">
+              - Nível 3 - Client Side
+            </Link>
+          </li>
+          <li>
+            <Link className="underline" href="/nivel-3/community-libraries">
+              - Nível 3 - Community Libraries
             </Link>
           </li>
         </ol>
