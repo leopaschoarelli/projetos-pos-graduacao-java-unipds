@@ -33,10 +33,11 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
     const login = async (email: string, password: string) => {
         const res = await fetch("/api/auth", {
             method: "POST",
-            body: JSON.stringify({email, password},)
+            body: JSON.stringify({ email, password }),
         });
 
         const data = await res.json();
+
 
         if (res.ok) {
             setUser(data.user);
@@ -60,7 +61,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
             {children}
         </AuthContext.Provider>
     );
-    
+
 };
 
 export const useAuth = () => useContext(AuthContext);
