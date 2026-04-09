@@ -35,6 +35,11 @@ export default function Home() {
               - Nível 3 - Community Libraries
             </Link>
           </li>
+          <li>
+            <Link className="underline" href="/login">
+              - Nível 4 - Login
+            </Link>
+          </li>
         </ol>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
