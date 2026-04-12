@@ -40,6 +40,21 @@ export default function Home() {
               - Nível 4 - Login
             </Link>
           </li>
+                    <li>
+            <Link className="underline" href="/dashboard">
+              - Nível 4 - Dashboard
+            </Link>
+          </li>
+          <li>
+            <Link className="underline" href="/test-server">
+              - Nível 4 - Test Server-side
+            </Link>
+          </li>
+          <li>
+            <Link className="underline" href="/test-client">
+              - Nível 4 - Test Client-side
+            </Link>
+          </li>
         </ol>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
