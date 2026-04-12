@@ -1,27 +1,22 @@
 "use client";
 
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { Button } from "@/src/components/Button";
 import { useAuth } from "../AuthContext";
 
 export default function Dashboard() {
-    const { user, logout } = useAuth();
-    const router = useRouter();
+  const { user, logout } = useAuth();
 
-    useEffect(() => {
-        if (!user) {
-            router.push("/login");
-        }
-    }, [user]);
+  if (!user) return null;
 
-    if (!user) return null;
+  return (
+    <div className="grid gap-y-4 w-96 p-4 border border-gray-900 rounded">
+      <h1 className="text-3xl font-bold">Dashboard</h1>
 
-    return (
-        <div>
-            <h1>Bem-vindo, {user.email}</h1>
-            <p>Sua role: {user.role}</p>
-            <button onClick={logout}>Sair</button>
-        </div>
-    );
+      <p>Acesso autorizado (Autorização OK)</p>
+
+      <p>Sua role: {user.role}</p>
+
+      <Button onClick={logout}>Logout</Button>
+    </div>
+  );
 }
-

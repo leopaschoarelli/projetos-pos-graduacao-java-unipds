@@ -138,7 +138,7 @@ Início da disciplina em: 30/03/2026 ✅
 - Videoaula 08: Autenticação (Parte 1) ✅
 - Videoaula 09: Autenticação (Parte 2) ✅
 - Videoaula 10: Autenticação (Parte 3) ✅
-- Videoaula 11: Autenticação (Parte 4)
+- Videoaula 11: Autenticação (Parte 4) ✅
 - Videoaula 12: Autenticação (Parte 5)
 - Videoaula 13: Projeto Guiado: Mini App Completo (Parte 1)
 - Videoaula 14: Projeto Guiado: Mini App Completo (Parte 2)
