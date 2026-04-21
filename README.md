@@ -143,7 +143,7 @@ Início da disciplina em: 30/03/2026 ✅
 - Videoaula 13: Projeto Guiado: Mini App Completo (Parte 1) ✅
 - Videoaula 14: Projeto Guiado: Mini App Completo (Parte 2) ✅
 - Videoaula 15: Projeto Guiado: Mini App Completo (Parte 3) ✅
-- Videoaula 16: Projeto Guiado: Mini App Completo (Parte 4)
+- Videoaula 16: Projeto Guiado: Mini App Completo (Parte 4) ✅
 - Videoaula 17: Projeto Guiado: Mini App Completo (Parte 5)
 - Videoaula 18: Projeto Guiado: Mini App Completo (Parte 6)
 - Videoaula 19: Projeto Guiado: Mini App Completo (Parte 7)
