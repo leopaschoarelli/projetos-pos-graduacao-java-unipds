@@ -1,75 +1,35 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { FC, useActionState, useState } from "react";
 
-export default function FormRegister({ action }) {
+import { FormButton } from "./FormButton";
+import { FormError } from "./FormError";
+import { FormInput } from "./FormInput";
+
+type FormRegisterProps = {
+    action: (_: string, formData: FormData) => Promise<string>;
+}
+
+export const FormRegister: FC<FormRegisterProps> = ({ action }) => {
 
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassowrd, setShowPassword] = useState(false);
 
   const [errorMessage, formAction, isPending] = useActionState(action, "");
 
   return (
       <>  
-        {!isPending && errorMessage && (
-            <p className="px-4 py-2 bg-red-400 text-white font-bold text-sm rounded-lg">{errorMessage}</p>
-        )}
+        {!isPending && <FormError message={errorMessage} />}
+        
         <form className="grid gap-y-6" action={formAction}>
-            <fieldset className="grid">
-            <label className="text-[#7b7c7b]" htmlFor="username">Usuário</label>
-            <input className="px-2 py-1
-                                text-[#7b7c7b] 
-                                border border-[#e8e9e9] 
-                                focus:border-[#b1b2b2] 
-                                hover:border-[#b1b2b2] 
-                                outline-none 
-                                shadow-md
-                                rounded-lg" 
-                                id="username" 
-                                name="username"
-                                value={username}
-                                onChange={(e) => setUsername(e.target.value)}/>
-            </fieldset>
-            <fieldset className="grid">
-            <label className="text-[#7b7c7b]" htmlFor="email">Email</label>
-            <input  className="px-2 py-1
-                                text-[#7b7c7b] 
-                                border border-[#e8e9e9] 
-                                focus:border-[#b1b2b2] 
-                                hover:border-[#b1b2b2] 
-                                outline-none 
-                                shadow-md
-                                rounded-lg"
-                                id="email" 
-                                name="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)} />
-            </fieldset>
-            <fieldset className="grid">
+            <FormInput id="username" label="Usuário" value={username} setValue={setUsername} />
 
-            <label className="text-[#7b7c7b]" htmlFor="password">Senha</label>
+            <FormInput id="email" label="Email" value={email} setValue={setEmail} />
 
-            <div className="relative flex items-center">
-                <input  className="w-full pl-2 pr-9 py-1
-                                    text-[#7b7c7b] 
-                                    border border-[#e8e9e9] 
-                                    focus:border-[#b1b2b2] 
-                                    hover:border-[#b1b2b2] 
-                                    outline-none 
-                                    shadow-md
-                                    rounded-lg" 
-                                    id="password" 
-                                    name="password"
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    type={showPassowrd ? "text" : "password"} />
+            <FormInput id="password" label="Senha" value={password} setValue={setPassword} type="password" />
 
-                <button className="cursor-pointer absolute right-2" type="button" onClick={() => setShowPassword((show) => !show)}>👀</button>
-            </div>
-            </fieldset>
-            <button className="py-2 bg-[#141516] text-white shadow-md rounded-lg cursor-pointer hover:shadow-none">Cadastrar</button>
+            <FormButton>Cadastrar</FormButton>
         </form>
       </>
   );

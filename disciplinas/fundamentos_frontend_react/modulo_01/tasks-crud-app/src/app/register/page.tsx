@@ -1,4 +1,5 @@
-import FormRegister from "@/components/FormRegister";
+import { FormRegister } from "@/components/FormRegister";
+import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 
@@ -43,14 +44,21 @@ export default function Cadastro() {
       if (!token) {
         return message;
       } else {
-        // @todo: adicionar lógica de usuário autenticado
-        // redirect("/tasks");
+        const cookieStore = await cookies();
+        cookieStore.set('token', token, {
+          secure: true,
+          httpOnly: true,
+          path: "/",
+          maxAge: 60 * 60 * 24,
+        })
       }
     } catch {
       console.error("handleRegister failed");
       return "Erro no Cadastro!";
     }
-  }
+
+    redirect("/tasks");
+  };
 
   return (
     <div className="grid gap-y-4 px-8 min-w-100 py-12 bg-[#fdfcfc] rounded-3xl shadow-xl">
