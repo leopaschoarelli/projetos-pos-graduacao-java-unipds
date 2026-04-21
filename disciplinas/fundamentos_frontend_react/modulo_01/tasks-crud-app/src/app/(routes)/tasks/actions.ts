@@ -52,6 +52,7 @@ export const handleCompleteTask = async (formData: FormData) => {
     }    
 
     try {
+
         const cookieStore = await cookies();
 
         const token = cookieStore.get("token")?.value;
@@ -76,6 +77,45 @@ export const handleCompleteTask = async (formData: FormData) => {
         }
     } catch {
         console.error("handleCompleteTask failed");
+        return;
+    }
+}
+
+export const handleDeleteTask = async (formData: FormData) => {
+
+    const id = formData.get("id")?.toString();  
+
+    if (!id) {
+        console.error("Você precisa informar o ID da Task!");
+        return;
+    }    
+
+    try {
+
+        const cookieStore = await cookies();
+
+        const token = cookieStore.get("token")?.value;
+
+        if (!token) {
+            console.error("Token não encontrado");
+            return;
+        } else {
+            const { message } = await fetchWithToken(`${process.env.BACKEND_URL}/tasks/${id}`, 
+                token, 
+                {
+                    method: 'DELETE',
+                }
+            );
+
+            if (message) {
+                console.error(message);
+                return;
+            } 
+
+            revalidateTag("get-tasks");
+        }
+    } catch {
+        console.error("handleDeleteTask failed");
         return;
     }
 }
