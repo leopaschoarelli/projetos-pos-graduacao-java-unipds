@@ -1,7 +1,16 @@
 import { FormRegister } from "@/components/FormRegister";
+import { COOKIE } from "@/constants/constants";
+import { checkInvalidEmail, checkInvalidPassword } from "@/lib/utils";
+import { Metadata } from "next";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
+
+const PAGE_TITLE = "Cadastro";
+
+export const metadata: Metadata = {
+  title: PAGE_TITLE,
+};
 
 export default function Cadastro() {
 
@@ -16,11 +25,11 @@ export default function Cadastro() {
       return "Preencha todos os campos!";
     }
 
-    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+    if (checkInvalidEmail(email)) {
       return "E-mail inválido!";
     }
 
-    if (password.length < 6) {
+    if (checkInvalidPassword(password)) {
       return "A senha precisa ter pelo menos 6 caracteres!";
     }
 
@@ -31,7 +40,7 @@ export default function Cadastro() {
           password,
       };
       
-      const res = await fetch('http://localhost:4000/auth/register', {
+      const res = await fetch(`${process.env.BACKEND_URL}/auth/register`, {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
@@ -45,12 +54,7 @@ export default function Cadastro() {
         return message;
       } else {
         const cookieStore = await cookies();
-        cookieStore.set('token', token, {
-          secure: true,
-          httpOnly: true,
-          path: "/",
-          maxAge: 60 * 60 * 24,
-        })
+        cookieStore.set('token', token, COOKIE);
       }
     } catch {
       console.error("handleRegister failed");
@@ -61,10 +65,10 @@ export default function Cadastro() {
   };
 
   return (
-    <div className="grid gap-y-4 px-8 min-w-100 py-12 bg-[#fdfcfc] rounded-3xl shadow-xl">
-      <h1 className="text-4xl text-center font-bold">Cadastro</h1>
+    <>
+      <h1 className="text-4xl text-center font-bold">{PAGE_TITLE}</h1>
       <FormRegister action={handleRegister} />
       <Link className="text-center underline" href="/login">Já tenho cadastro</Link>
-    </div>
+    </>
   );
 }
