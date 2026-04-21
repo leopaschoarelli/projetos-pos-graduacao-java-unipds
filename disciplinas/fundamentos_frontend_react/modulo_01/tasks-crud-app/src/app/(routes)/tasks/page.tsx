@@ -2,6 +2,8 @@ import { FormTasks } from "@/components/forms/FormTasks";
 import { fetchWithToken } from "@/lib/fetchWithToken";
 import { Metadata } from "next";
 import { cookies } from "next/headers";
+import { handleCompleteTask, handleCreateTask } from "./actions";
+import { TaskCard } from "@/components/TaskCard";
 
 const PAGE_TITLE = "Tasks";
 
@@ -9,48 +11,29 @@ export const metadata: Metadata = {
   title: PAGE_TITLE,
 };
 
+type TaskType = {
+  _id: string;
+  userId: string;
+  title: string;
+  completed: boolean;
+  deleted: boolean;
+  createDate: string;
+  modifyDate: string;
+};
 
-export default function Tasks() {
+export default async function Tasks() {
 
-  const handleCreateTask = async (_: string, formData: FormData) => {
-        "use server";
-        
-        const task    = formData.get("task")?.toString();  
-    
-        if (!task) {
-          return "Você precisa informar o título da Task!";
-        }    
+  const cookieStore = await cookies();
 
-        try {
-          const body = {
-              title: task,
-          };
+  const token = cookieStore.get("token")?.value;
 
-          const cookieStore = await cookies();
+  if (!token) return null;
 
-          const token = cookieStore.get("token")?.value;
-
-          if (!token) {
-            return "Token não encontrado";
-          } else {
-
-            fetchWithToken(`${process.env.BACKEND_URL}/tasks`, token);
-          
-            const { message } = await fetchWithToken(`${process.env.BACKEND_URL}/tasks`, 
-              token, 
-              {
-                method: 'POST',
-                body: JSON.stringify(body),
-              }
-            );
-
-            return message;
-          }
-      } catch {
-        console.error("handleCreateTask failed");
-        return "Erro ao criar Task";
-      }
-  };
+  const { tasks }: { tasks: TaskType[] } = await fetchWithToken(`${process.env.BACKEND_URL}/tasks`, token, {
+    next: {
+      tags: ['get-tasks'],
+    },
+  });
 
   return (
     <>
@@ -58,8 +41,15 @@ export default function Tasks() {
 
       <FormTasks action={handleCreateTask} />
 
-      <ul>
-        <li>tasks...</li>
+      <ul className="grid gap-y-3">
+        {tasks.reverse().map((task) => (
+          <TaskCard key={task._id} 
+                    id={task._id} 
+                    completed={task.completed}
+                    completeAction={handleCompleteTask}>
+            {task.title}
+          </TaskCard>
+        ))}
       </ul>
     </>
   );
