@@ -161,7 +161,7 @@ Início da disciplina em: 25/04/2026 ✅
 
 ### Módulo 1:
 - Videoaula 01: Introdução ✅
-- Videoaula 02: Pensamento Arquitetural 
+- Videoaula 02: Pensamento Arquitetural ✅
 - Videoaula 03: Modularização 
 - Videoaula 04: Características Arquiteturais 
 - Videoaula 05: Pensamento Component-Based 
