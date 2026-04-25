@@ -157,7 +157,24 @@ Início da disciplina em: 30/03/2026 ✅
 
 ## Arquitetura de Sistemas
 
-Contéudo bloqueado. Início da disciplina em: 25/04/2026 🚫
+Início da disciplina em: 25/04/2026 ✅
+
+### Módulo 1:
+- Videoaula 01: Introdução 
+- Videoaula 02: Pensamento Arquitetural 
+- Videoaula 03: Modularização 
+- Videoaula 04: Características Arquiteturais 
+- Videoaula 05: Pensamento Component-Based 
+- Videoaula 06: Fundamentos de Estilos Arquiteturais 
+- Videoaula 07: Arquitetura em Camadas e Arquitetura Pipeline 
+- Videoaula 08: Arquitetura MicroKernel e Arquitetura Service-Based 
+- Videoaula 09: Arquitetura Event-Driven 
+- Videoaula 10: Arquitetura Space-Based 
+- Videoaula 11: Arquitetura Microservices 
+- Videoaula 12: Escolhas, Decisões e Riscos 
+- Videoaula 13: Clean Architecture 
+### Podcast:
+- Podcast 01:  Podcast: do Brasil para o mundo: Histórias reais de quem construiu uma carreira global. 
 
 ## Software Design e System Design
 
