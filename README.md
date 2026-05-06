@@ -168,7 +168,7 @@ Início da disciplina em: 25/04/2026 ✅
 - Videoaula 06: Fundamentos de Estilos Arquiteturais ✅
 - Videoaula 07: Arquitetura em Camadas e Arquitetura Pipeline ✅
 - Videoaula 08: Arquitetura MicroKernel e Arquitetura Service-Based ✅
-- Videoaula 09: Arquitetura Event-Driven 
+- Videoaula 09: Arquitetura Event-Driven ✅
 - Videoaula 10: Arquitetura Space-Based 
 - Videoaula 11: Arquitetura Microservices 
 - Videoaula 12: Escolhas, Decisões e Riscos 
