@@ -172,7 +172,7 @@ Início da disciplina em: 25/04/2026 ✅
 - Videoaula 10: Arquitetura Space-Based ✅
 - Videoaula 11: Arquitetura Microservices ✅
 - Videoaula 12: Escolhas, Decisões e Riscos ✅
-- Videoaula 13: Clean Architecture 
+- Videoaula 13: Clean Architecture ✅
 ### Podcast:
 - Podcast 01:  Podcast: do Brasil para o mundo: Histórias reais de quem construiu uma carreira global. 
 
