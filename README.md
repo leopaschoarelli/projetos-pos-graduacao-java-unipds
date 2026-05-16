@@ -153,26 +153,26 @@ Início da disciplina em: 30/03/2026 ✅
 - Videoaula 23: Entrevistas Técnicas e Desafios Reais (Parte 3) ✅
 - Videoaula 24: Entrevistas Técnicas e Desafios Reais (Parte 4) ✅
 ### Videocast:
-- Videocast 01:  Videocast: Roadmap de Estudos: Como criar um plano para os resultados que você deseja
+- Videocast 01:  Videocast: Roadmap de Estudos: Como criar um plano para os resultados que você deseja ✅
 
 ## Arquitetura de Sistemas
 
 Início da disciplina em: 25/04/2026 ✅
 
 ### Módulo 1:
-- Videoaula 01: Introdução 
-- Videoaula 02: Pensamento Arquitetural 
-- Videoaula 03: Modularização 
-- Videoaula 04: Características Arquiteturais 
-- Videoaula 05: Pensamento Component-Based 
-- Videoaula 06: Fundamentos de Estilos Arquiteturais 
-- Videoaula 07: Arquitetura em Camadas e Arquitetura Pipeline 
-- Videoaula 08: Arquitetura MicroKernel e Arquitetura Service-Based 
-- Videoaula 09: Arquitetura Event-Driven 
-- Videoaula 10: Arquitetura Space-Based 
-- Videoaula 11: Arquitetura Microservices 
-- Videoaula 12: Escolhas, Decisões e Riscos 
-- Videoaula 13: Clean Architecture 
+- Videoaula 01: Introdução ✅
+- Videoaula 02: Pensamento Arquitetural ✅
+- Videoaula 03: Modularização ✅
+- Videoaula 04: Características Arquiteturais ✅
+- Videoaula 05: Pensamento Component-Based ✅
+- Videoaula 06: Fundamentos de Estilos Arquiteturais ✅
+- Videoaula 07: Arquitetura em Camadas e Arquitetura Pipeline ✅
+- Videoaula 08: Arquitetura MicroKernel e Arquitetura Service-Based ✅
+- Videoaula 09: Arquitetura Event-Driven ✅
+- Videoaula 10: Arquitetura Space-Based ✅
+- Videoaula 11: Arquitetura Microservices ✅
+- Videoaula 12: Escolhas, Decisões e Riscos ✅
+- Videoaula 13: Clean Architecture ✅
 ### Podcast:
 - Podcast 01:  Podcast: do Brasil para o mundo: Histórias reais de quem construiu uma carreira global. 
 
