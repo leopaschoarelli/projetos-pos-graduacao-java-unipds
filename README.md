@@ -174,7 +174,7 @@ Início da disciplina em: 25/04/2026 ✅
 - Videoaula 12: Escolhas, Decisões e Riscos ✅
 - Videoaula 13: Clean Architecture ✅
 ### Podcast:
-- Podcast 01:  Podcast: do Brasil para o mundo: Histórias reais de quem construiu uma carreira global. 
+- Podcast 01:  Podcast: do Brasil para o mundo: Histórias reais de quem construiu uma carreira global. ✅
 
 ## Software Design e System Design
 
