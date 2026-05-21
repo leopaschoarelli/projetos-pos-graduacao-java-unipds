@@ -7,7 +7,7 @@ Neste repositório estarão os projetos desenvolvidos durante o curso de Pós Gr
 
 Início da disciplina em: 05/02/2026 ✅
 
-### Introdução ao Java
+### Introdução ao Java:
 - Videoaula 01: O que é Java? ✅
 - Videoaula 02: JVM, JSR e JEP ✅
 - Videoaula 03: Variáveis, Operadores e Condicionais ✅
@@ -27,15 +27,15 @@ Início da disciplina em: 05/02/2026 ✅
 - Videoaula 17: Classes Abstratas e Static ✅
 - Videoaula 18: Object, Classes Wrapper e JavaDoc ✅
 - Videoaula 19: Jars e Exceptions ✅
-### Aula ao vivo
+### Aula ao vivo:
 - Construindo Aplicações Cloud Native com Java e Kubernets: Uma aventura com Live Coding ✅
-- Palestras: 1 - Resiliência como pilar para arquiteturas escaláveis
+- Palestras: 1 - Resiliência como pilar para arquiteturas escaláveis ✅
 - Sessão Tira-Dúvidas: Fundamentos de Front-End com React (Disciplina 3) com Daniel Xavier ✅
 - Sessão Tira-Dúvidas: Disciplinas 1, 2 e 3 ✅
-- Live SOLID Essencial
+- Live SOLID Essencial ✅
 - Java 24 sem enrolação ✅
 - JPA na prática ✅
-- Refatoração
+- Refatoração ✅
 
 ## Fundamentos do Java
 
@@ -68,6 +68,18 @@ Início da disciplina em: 06/02/2026 ✅
 - Videoaula 14: Logging ✅
 - Videoaula 15: Internacionalização (i18n) ✅
 - Videoaula 16: Serialização ✅
+### Módulo Prático 01:
+- Videoaula 01: Projeto Prático 
+- Videoaula 02: Projeto Prático 
+- Videoaula 03: Projeto Prático 
+- Videoaula 04: Projeto Prático 
+- Videoaula 05: Projeto Prático 
+- Videoaula 06: Projeto Prático 
+- Videoaula 07: Projeto Prático 
+- Videoaula 08: Projeto Prático 
+- Videoaula 09: Projeto Prático 
+- Videoaula 10: Projeto Prático 
+- Videoaula 11: Projeto Prático 
 ### Videocast:
 - Videoaula 01:  Inteligência Artificial (IA) ✅
 
@@ -178,7 +190,40 @@ Início da disciplina em: 25/04/2026 ✅
 
 ## Software Design e System Design
 
-Contéudo bloqueado. Início da disciplina em: 21/05/2026 🚫
+Início da disciplina em: 21/05/2026 ✅
+
+### Módulo 1:
+- Videoaula 01: Software Design & System Design - Introdução 
+- Videoaula 02: Princípios Básicos de System Design 
+- Videoaula 03: System Design e Documentação 
+- Videoaula 04: Introdução a Banco de Dados na Perspectiva de System Design 
+- Videoaula 05: Comunicação entre Componentes (System Design) 
+- Videoaula 06: Exemplos e Visão de Geral de Cases de System Design 
+- Videoaula 07: Visão Geral de Práticas de Código 
+- Videoaula 08: Visão Geral das Práticas de Código na Prática 
+- Videoaula 09: Design Patterns 
+- Videoaula 10: Design Patterns 
+- Videoaula 11: Visão Geral Sobre DDD 
+- Videoaula 12:  Conhecendo o JMolecules 
+### Projeto Prático:
+- Videoaula 01: Projeto Prático 
+- Videoaula 02: Projeto Prático 
+- Videoaula 03: Projeto Prático 
+- Videoaula 04: Projeto Prático 
+- Videoaula 05: Projeto Prático 
+- Videoaula 06: Projeto Prático 
+- Videoaula 07: Projeto Prático 
+- Videoaula 08: Projeto Prático 
+- Videoaula 09: Projeto Prático 
+- Videoaula 10: Projeto Prático 
+- Videoaula 11: Projeto Prático 
+- Videoaula 12: Projeto Prático 
+- Videoaula 13: Projeto Prático 
+- Videoaula 14: Projeto Prático 
+- Videoaula 15: Projeto Prático 
+### Podcast:
+- Podcast 01: Podcast - Fazendo as Pazes com o Legado 
+- Podcast 02: Podcast - Fazendo as Pazes com o Legado - Mão na Massa 
 
 ## Concorrência e Multithreading em Java
 
